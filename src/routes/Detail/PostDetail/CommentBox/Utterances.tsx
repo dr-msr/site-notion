@@ -1,6 +1,5 @@
 import { CONFIG } from "site.config"
 import { useEffect } from "react"
-import styled from "@emotion/styled"
 import useScheme from "src/hooks/useScheme"
 import { useRouter } from "next/router"
 
@@ -36,17 +35,11 @@ const Utterances: React.FC<Props> = ({ issueTerm }) => {
   }, [scheme, router])
   return (
     <>
-      <StyledWrapper id="comments">
+      <div id="comments" className="md:-ml-16">
         <div className="utterances-frame"></div>
-      </StyledWrapper>
+      </div>
     </>
   )
 }
 
 export default Utterances
-
-const StyledWrapper = styled.div`
-  @media (min-width: 768px) {
-    margin-left: -4rem;
-  }
-`

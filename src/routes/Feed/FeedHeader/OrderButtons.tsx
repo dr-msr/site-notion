@@ -1,4 +1,3 @@
-import styled from "@emotion/styled"
 import { useRouter } from "next/router"
 import React from "react"
 
@@ -20,38 +19,31 @@ const OrderButtons: React.FC<Props> = () => {
     })
   }
   return (
-    <StyledWrapper>
+    <div className="flex gap-2 text-sm leading-5">
       <a
         data-active={currentOrder === "desc"}
         onClick={() => handleClickOrderBy("desc")}
+        className={`cursor-pointer ${
+          currentOrder === "desc"
+            ? "font-bold text-gray-12"
+            : "text-gray-10"
+        }`}
       >
         Desc
       </a>
       <a
         data-active={currentOrder === "asc"}
         onClick={() => handleClickOrderBy("asc")}
+        className={`cursor-pointer ${
+          currentOrder === "asc"
+            ? "font-bold text-gray-12"
+            : "text-gray-10"
+        }`}
       >
         Asc
       </a>
-    </StyledWrapper>
+    </div>
   )
 }
 
 export default OrderButtons
-
-const StyledWrapper = styled.div`
-  display: flex;
-  gap: 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  a {
-    cursor: pointer;
-    color: ${({ theme }) => theme.colors.gray10};
-
-    &[data-active="true"] {
-      font-weight: 700;
-
-      color: ${({ theme }) => theme.colors.gray12};
-    }
-  }
-`

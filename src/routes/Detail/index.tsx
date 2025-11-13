@@ -1,7 +1,6 @@
 import useMermaidEffect from "./hooks/useMermaidEffect"
 import PostDetail from "./PostDetail"
 import PageDetail from "./PageDetail"
-import styled from "@emotion/styled"
 import usePostQuery from "src/hooks/usePostQuery"
 
 type Props = {}
@@ -12,24 +11,21 @@ const Detail: React.FC<Props> = () => {
 
   if (!data) return null
   return (
-    <StyledWrapper data-type={data.type}>
+    <div
+      className={`py-8 ${
+        data.type[0] === "Paper" ? "py-10" : ""
+      }`}
+    >
       {data.type[0] === "Page" && <PageDetail />}
       {data.type[0] !== "Page" && <PostDetail />}
-    </StyledWrapper>
+      <style jsx global>{`
+        code[class*="language-mermaid"],
+        pre[class*="language-mermaid"] {
+          background-color: var(--gray-5);
+        }
+      `}</style>
+    </div>
   )
 }
 
 export default Detail
-
-const StyledWrapper = styled.div`
-  padding: 2rem 0;
-
-  &[data-type="Paper"] {
-    padding: 40px 0;
-  }
-  /** Reference: https://github.com/chriskempson/tomorrow-theme **/
-  code[class*="language-mermaid"],
-  pre[class*="language-mermaid"] {
-    background-color: ${({ theme }) => theme.colors.gray5};
-  }
-`

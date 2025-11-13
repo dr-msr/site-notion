@@ -14,7 +14,6 @@ import "prismjs/themes/prism-tomorrow.css"
 
 import "katex/dist/katex.min.css"
 import { FC } from "react"
-import styled from "@emotion/styled"
 
 const _NotionRenderer = dynamic(
   () => import("react-notion-x").then((m) => m.NotionRenderer),
@@ -57,7 +56,7 @@ type Props = {
 const NotionRenderer: FC<Props> = ({ recordMap }) => {
   const [scheme] = useScheme()
   return (
-    <StyledWrapper>
+    <div className="notion-wrapper">
       <_NotionRenderer
         darkMode={scheme === "dark"}
         recordMap={recordMap}
@@ -72,21 +71,19 @@ const NotionRenderer: FC<Props> = ({ recordMap }) => {
         }}
         mapPageUrl={mapPageUrl}
       />
-    </StyledWrapper>
+      <style jsx global>{`
+        .notion-wrapper .notion-collection-page-properties {
+          display: none !important;
+        }
+        .notion-wrapper .notion-page {
+          padding: 0;
+        }
+        .notion-wrapper .notion-list {
+          width: 100%;
+        }
+      `}</style>
+    </div>
   )
 }
 
 export default NotionRenderer
-
-const StyledWrapper = styled.div`
-  /* // TODO: why render? */
-  .notion-collection-page-properties {
-    display: none !important;
-  }
-  .notion-page {
-    padding: 0;
-  }
-  .notion-list {
-    width: 100%;
-  }
-`

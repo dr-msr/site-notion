@@ -1,4 +1,3 @@
-import styled from "@emotion/styled"
 import React from "react"
 import {
   AiFillLinkedin,
@@ -12,18 +11,16 @@ import { Emoji } from "src/components/Emoji"
 const ContactCard: React.FC = () => {
   return (
     <>
-      <StyledTitle>
-        <Emoji>💬</Emoji> Contact
-      </StyledTitle>
-      <StyledWrapper>
+      <div className="flex p-1 flex-col rounded-2xl bg-white shadow-sm border border-gray-6 dark:bg-gray-4 dark:border-transparent">
         {CONFIG.profile.github && (
           <a
             href={`https://github.com/${CONFIG.profile.github}`}
             rel="noreferrer"
             target="_blank"
+            className="flex p-3 gap-3 items-center rounded-2xl text-gray-11 cursor-pointer hover:text-gray-12 hover:bg-gray-5"
           >
-            <AiOutlineGithub className="icon" />
-            <div className="name">github</div>
+            <AiOutlineGithub className="icon text-2xl leading-8" />
+            <div className="name text-sm leading-5">github</div>
           </a>
         )}
         {CONFIG.profile.instagram && (
@@ -31,9 +28,10 @@ const ContactCard: React.FC = () => {
             href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
             rel="noreferrer"
             target="_blank"
+            className="flex p-3 gap-3 items-center rounded-2xl text-gray-11 cursor-pointer hover:text-gray-12 hover:bg-gray-5"
           >
-            <AiOutlineInstagram className="icon" />
-            <div className="name">instagram</div>
+            <AiOutlineInstagram className="icon text-2xl leading-8" />
+            <div className="name text-sm leading-5">instagram</div>
           </a>
         )}
         {CONFIG.profile.email && (
@@ -41,10 +39,10 @@ const ContactCard: React.FC = () => {
             href={`mailto:${CONFIG.profile.email}`}
             rel="noreferrer"
             target="_blank"
-            css={{ overflow: "hidden" }}
+            className="flex p-3 gap-3 items-center rounded-2xl text-gray-11 cursor-pointer hover:text-gray-12 hover:bg-gray-5 overflow-hidden"
           >
-            <AiOutlineMail className="icon" />
-            <div className="name">email</div>
+            <AiOutlineMail className="icon text-2xl leading-8" />
+            <div className="name text-sm leading-5">email</div>
           </a>
         )}
         {CONFIG.profile.linkedin && (
@@ -52,49 +50,15 @@ const ContactCard: React.FC = () => {
             href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
             rel="noreferrer"
             target="_blank"
+            className="flex p-3 gap-3 items-center rounded-2xl text-gray-11 cursor-pointer hover:text-gray-12 hover:bg-gray-5"
           >
-            <AiFillLinkedin className="icon" />
-            <div className="name">linkedin</div>
+            <AiFillLinkedin className="icon text-2xl leading-8" />
+            <div className="name text-sm leading-5">linkedin</div>
           </a>
         )}
-      </StyledWrapper>
+      </div>
     </>
   )
 }
 
 export default ContactCard
-
-const StyledTitle = styled.div`
-  padding: 0.25rem;
-  margin-bottom: 0.75rem;
-`
-const StyledWrapper = styled.div`
-  display: flex;
-  padding: 0.25rem;
-  flex-direction: column;
-  border-radius: 1rem;
-  background-color: ${({ theme }) =>
-    theme.scheme === "light" ? "white" : theme.colors.gray4};
-  a {
-    display: flex;
-    padding: 0.75rem;
-    gap: 0.75rem;
-    align-items: center;
-    border-radius: 1rem;
-    color: ${({ theme }) => theme.colors.gray11};
-    cursor: pointer;
-
-    :hover {
-      color: ${({ theme }) => theme.colors.gray12};
-      background-color: ${({ theme }) => theme.colors.gray5};
-    }
-    .icon {
-      font-size: 1.5rem;
-      line-height: 2rem;
-    }
-    .name {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-    }
-  }
-`

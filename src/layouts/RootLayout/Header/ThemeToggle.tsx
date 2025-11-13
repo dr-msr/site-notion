@@ -1,4 +1,3 @@
-import styled from "@emotion/styled"
 import React from "react"
 import { Emoji } from "src/components/Emoji"
 import useScheme from "src/hooks/useScheme"
@@ -13,14 +12,10 @@ const ThemeToggle: React.FC<Props> = () => {
   }
 
   return (
-    <StyledWrapper onClick={handleClick}>
+    <div className="cursor-pointer hover:bg-gray-6 rounded-2xl px-3 py-1" onClick={handleClick}>
       <Emoji>{scheme === "light" ? "☀️" : "🌙"}</Emoji>
-    </StyledWrapper>
+    </div>
   )
 }
 
 export default ThemeToggle
-
-const StyledWrapper = styled.div`
-  cursor: pointer;
-`

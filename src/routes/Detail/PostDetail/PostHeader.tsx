@@ -4,7 +4,6 @@ import { TPost } from "src/types"
 import { formatDate } from "src/libs/utils"
 import Image from "next/image"
 import React from "react"
-import styled from "@emotion/styled"
 
 type Props = {
   data: TPost
@@ -12,16 +11,16 @@ type Props = {
 
 const PostHeader: React.FC<Props> = ({ data }) => {
   return (
-    <StyledWrapper>
-      <h1 className="title">{data.title}</h1>
+    <div>
+      <h1 className="title text-3xl leading-9 font-bold">{data.title}</h1>
       {data.type[0] !== "Paper" && (
-        <nav>
-          <div className="top">
+        <nav className="mt-6 text-gray-11">
+          <div className="top flex mb-3 gap-3 items-center">
             {data.author && data.author[0] && data.author[0].name && (
               <>
-                <div className="author">
+                <div className="author flex gap-2 items-center">
                   <Image
-                    css={{ borderRadius: "50%" }}
+                    className="rounded-full"
                     src={data.author[0].profile_photo || CONFIG.profile.image}
                     alt="profile_photo"
                     width={24}
@@ -29,19 +28,19 @@ const PostHeader: React.FC<Props> = ({ data }) => {
                   />
                   <div className="">{data.author[0].name}</div>
                 </div>
-                <div className="hr"></div>
+                <div className="hr mt-1 mb-1 self-stretch w-px bg-gray-10"></div>
               </>
             )}
-            <div className="date">
+            <div className="date mr-2 md:ml-0">
               {formatDate(
                 data?.date?.start_date || data.createdTime,
                 CONFIG.lang
               )}
             </div>
           </div>
-          <div className="mid">
+          <div className="mid flex mb-4 items-center">
             {data.tags && (
-              <div className="tags">
+              <div className="tags flex overflow-x-auto flex-nowrap gap-2 max-w-full">
                 {data.tags.map((tag: string) => (
                   <Tag key={tag}>{tag}</Tag>
                 ))}
@@ -49,10 +48,10 @@ const PostHeader: React.FC<Props> = ({ data }) => {
             )}
           </div>
           {data.thumbnail && (
-            <div className="thumbnail">
+            <div className="thumbnail overflow-hidden relative mb-7 rounded-3xl w-full bg-gray-4 pb-[66%] lg:pb-[50%]">
               <Image
                 src={data.thumbnail}
-                css={{ objectFit: "cover" }}
+                className="object-cover"
                 fill
                 alt={data.title}
               />
@@ -60,70 +59,8 @@ const PostHeader: React.FC<Props> = ({ data }) => {
           )}
         </nav>
       )}
-    </StyledWrapper>
+    </div>
   )
 }
 
 export default PostHeader
-
-const StyledWrapper = styled.div`
-  .title {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    font-weight: 700;
-  }
-  nav {
-    margin-top: 1.5rem;
-    color: ${({ theme }) => theme.colors.gray11};
-    > .top {
-      display: flex;
-      margin-bottom: 0.75rem;
-      gap: 0.75rem;
-      align-items: center;
-      .author {
-        display: flex;
-        gap: 0.5rem;
-        align-items: center;
-      }
-      .hr {
-        margin-top: 0.25rem;
-        margin-bottom: 0.25rem;
-        align-self: stretch;
-        width: 1px;
-        background-color: ${({ theme }) => theme.colors.gray10};
-      }
-      .date {
-        margin-right: 0.5rem;
-
-        @media (min-width: 768px) {
-          margin-left: 0;
-        }
-      }
-    }
-    > .mid {
-      display: flex;
-      margin-bottom: 1rem;
-      align-items: center;
-      .tags {
-        display: flex;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        gap: 0.5rem;
-        max-width: 100%;
-      }
-    }
-    .thumbnail {
-      overflow: hidden;
-      position: relative;
-      margin-bottom: 1.75rem;
-      border-radius: 1.5rem;
-      width: 100%;
-      background-color: ${({ theme }) => theme.colors.gray4};
-      padding-bottom: 66%;
-
-      @media (min-width: 1024px) {
-        padding-bottom: 50%;
-      }
-    }
-  }
-`

@@ -1,4 +1,3 @@
-import styled from "@emotion/styled"
 import Image from "next/image"
 import React from "react"
 import { CONFIG } from "site.config"
@@ -8,74 +7,19 @@ type Props = {}
 
 const ProfileCard: React.FC<Props> = () => {
   return (
-    <StyledWrapper>
-      <div className="title">
-        <Emoji>💻</Emoji> Profile
-      </div>
-      <div className="content">
-        <div className="top">
-          <Image src={CONFIG.profile.image} fill alt="" />
+    <div>
+      <div className="mb-4 rounded-2xl w-full bg-white shadow-sm border border-gray-6 dark:bg-gray-4 dark:border-transparent md:p-4 lg:p-4">
+        <div className="relative w-full rounded-2xl overflow-hidden after:content-[''] after:block after:pb-[100%]">
+          <Image src={CONFIG.profile.image} fill alt="" className="object-cover" />
         </div>
-        <div className="mid">
-          <div className=" name">{CONFIG.profile.name}</div>
-          <div className="role">{CONFIG.profile.role}</div>
-          <div className="text-sm mb-2">{CONFIG.profile.bio}</div>
+        <div className="flex p-2 flex-col items-center text-center">
+          <div className="name text-xl leading-7 font-bold">{CONFIG.profile.name}</div>
+          <div className="role mb-4 text-xs leading-5 text-gray-11">{CONFIG.profile.role}</div>
+          <div className="bio mb-2 text-sm text-muted-foreground leading-5">{CONFIG.profile.bio}</div>
         </div>
       </div>
-    </StyledWrapper>
+    </div>
   )
 }
 
 export default ProfileCard
-
-const StyledWrapper = styled.div`
-  > .title {
-    padding: 0.25rem;
-    margin-bottom: 0.75rem;
-  }
-  > .content {
-    margin-bottom: 2.25rem;
-    border-radius: 1rem;
-    width: 100%;
-    background-color: ${({ theme }) =>
-      theme.scheme === "light" ? "white" : theme.colors.gray4};
-    @media (min-width: 768px) {
-      padding: 1rem;
-    }
-    @media (min-width: 1024px) {
-      padding: 1rem;
-    }
-    .top {
-      position: relative;
-      width: 100%;
-      &:after {
-        content: "";
-        display: block;
-        padding-bottom: 100%;
-      }
-    }
-    .mid {
-      display: flex;
-      padding: 0.5rem;
-      flex-direction: column;
-      align-items: center;
-      .name {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-        font-style: italic;
-        font-weight: 700;
-      }
-      .role {
-        margin-bottom: 1rem;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-        color: ${({ theme }) => theme.colors.gray11};
-      }
-      .bio {
-        margin-bottom: 0.5rem;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-      }
-    }
-  }
-`
