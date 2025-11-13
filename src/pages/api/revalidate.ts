@@ -27,6 +27,6 @@ export default async function handler(
     res.json({ revalidated: true })
   } catch (err) {
     console.error(err)
-    return res.status(500).send("Error revalidating")
+    return res.status(500).send("Error revalidating ======> " + err)
   }
 }
