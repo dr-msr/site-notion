@@ -38,6 +38,7 @@ Next.js static blog using Notion as a Content Management System (CMS). Supports 
 6. Deploy on Vercel, with the following environment variables.
 
    - `NOTION_PAGE_ID` (Required): The Notion page Id got from the Share to Web URL. This is not the entire URL, but just the NOTION_PAGE_ID part as shown above.
+   - `REVALIDATE_SECRET` (Optional): A secret token for the on-demand revalidation endpoint. Set this to enable triggering page regeneration via API (e.g., from CI, webhooks, or admin backend).
    - `NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID` : For Google analytics Plugin.
    - `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` : For Google search console Plugin.
    - `NEXT_PUBLIC_NAVER_SITE_VERIFICATION` : For Naver search advisor Plugin.
@@ -104,6 +105,13 @@ Next.js static blog using Notion as a Content Management System (CMS). Supports 
    
    Q4: What should be entered for NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID and NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION in site.config.js?
    A4: You can check https://github.com/morethanmin/morethan-log/issues/203. Please note that updates may take some time to take effect after setting.
+
+   Q5: How can I trigger immediate updates when I publish a new post?
+   A5: Set the `REVALIDATE_SECRET` environment variable in your deployment settings, then call the revalidation API from your CI, webhook, or admin backend:
+   ```bash
+   curl -X POST "https://your-site.com/api/revalidate?secret=YOUR_SECRET&path=/"
+   ```
+   This will regenerate the homepage immediately. Note: This endpoint should only be called from trusted server-side code, never from public client-side code.
 
 If you encounter any other issues, please feel free to add them to the GitHub README to assist future users. We look forward to your contributions!
 
