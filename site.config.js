@@ -2,7 +2,7 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "Dr. Syamirul",
-    image: "/avatar.jpeg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "M.D. (Nizhny Novgorod) (2012)",
     bio: "Medical doctor and AI solutions architect specializing in healthcare technology. Former product lead for AI-driven health platforms. Building systems where clinical insight meets intelligent automation.",
     email: "me@drmsr.dev",
