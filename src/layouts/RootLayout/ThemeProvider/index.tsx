@@ -9,6 +9,9 @@ type Props = {
 export const ThemeProvider = ({ scheme, children }: Props) => {
   useEffect(() => {
     const root = document.documentElement
+    // Add transition class before changing theme
+    root.style.transition = 'background-color 0.3s ease, color 0.3s ease'
+    
     if (scheme === "dark") {
       root.classList.add("dark")
     } else {
