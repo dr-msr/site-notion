@@ -15,13 +15,13 @@ const MobileProfileCard: React.FC<Props> = () => {
             src={CONFIG.profile.image}
             width={90}
             height={90}
-            className="relative rounded-lg"
+            className="relative rounded-lg scale-x-[-1]"
             alt="profile_image"
           />
           <div className="wrapper h-fit">
-            <div className="top text-xl leading-7 font-bold italic">{CONFIG.profile.name}</div>
-            <div className="mid mb-2 text-sm leading-5 text-gray-11">{CONFIG.profile.role}</div>
-            <div className="btm text-sm text-muted-foreground leading-5">{CONFIG.profile.bio}</div>
+            <div className="top text-xl leading-7 font-bold">{CONFIG.profile.name}</div>
+            <div className="mid mb-2 text-xs leading-5 text-gray-11">{CONFIG.profile.role}</div>
+            <div className="btm text-sm text-muted-foreground leading-5 py-2">{CONFIG.profile.bio}</div>
           </div>
         </div>
       </div>

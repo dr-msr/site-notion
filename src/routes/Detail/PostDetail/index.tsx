@@ -16,10 +16,10 @@ const PostDetail: React.FC<Props> = () => {
   const category = (data.category && data.category?.[0]) || undefined
 
   return (
-    <div className="px-6 py-12 rounded-3xl max-w-3xl bg-white shadow-lg border border-gray-6 dark:bg-gray-4 dark:border-transparent mx-auto">
+    <div className="px-6 py-12 rounded-3xl bg-white shadow-lg border border-gray-6 dark:bg-gray-4 dark:border-transparent mx-auto">
       <article className="mx-auto max-w-[42rem]">
         {category && (
-          <div className="mb-2">
+          <div className="w-full flex justify-center items-centermb-2">
             <Category readOnly={data.status?.[0] === "PublicOnDetail"}>
               {category}
             </Category>

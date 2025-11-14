@@ -9,7 +9,7 @@ const ProfileCard: React.FC<Props> = () => {
   return (
     <div>
       <div className="mb-4 rounded-2xl w-full bg-white shadow-sm border border-gray-6 dark:bg-gray-4 dark:border-transparent md:p-4 lg:p-4">
-        <div className="relative w-full rounded-2xl overflow-hidden after:content-[''] after:block after:pb-[100%]">
+        <div className="relative w-full overflow-hidden after:content-[''] after:block after:pb-[100%]">
           <Image src={CONFIG.profile.image} fill alt="" className="object-cover" />
         </div>
         <div className="flex p-2 flex-col items-center text-center">

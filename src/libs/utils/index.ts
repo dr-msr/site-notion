@@ -16,3 +16,11 @@ export function formatDate(date: any, local: any) {
   
   return `${day}${getOrdinalSuffix(day)} ${month}`
 }
+
+export function cn(...inputs: (string | undefined | null | boolean)[]): string {
+  return inputs
+    .filter(Boolean)
+    .join(' ')
+    .trim()
+    .replace(/\s+/g, ' ')
+}

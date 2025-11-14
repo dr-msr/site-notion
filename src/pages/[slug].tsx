@@ -46,7 +46,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }))
 
   const revalidatedAt = new Date().toISOString()
-  console.log(`[getStaticProps] Regenerating post ${slug} at ${revalidatedAt}`)
 
   return {
     props: {

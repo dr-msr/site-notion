@@ -35,7 +35,7 @@ const PostCard: React.FC<Props> = ({ data }) => {
             </h2>
           </header>
           <div className="summary mb-4">
-            <p className="hidden md:block leading-8 text-gray-11">
+            <p className="block leading-6 text-gray-11">
               {data.summary}
             </p>
           </div>

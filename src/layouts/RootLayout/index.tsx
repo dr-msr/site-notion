@@ -5,6 +5,8 @@ import Header from "./Header"
 import Scripts from "src/layouts/RootLayout/Scripts"
 import useGtagEffect from "./useGtagEffect"
 import Prism from "prismjs/prism"
+import { ShootingStars } from "@/components/ui/shadcn-io/shooting-stars"
+import { Particles } from "@/components/ui/shadcn-io/particles"
 import 'prismjs/components/prism-markup-templating.js'
 import 'prismjs/components/prism-markup.js'
 import 'prismjs/components/prism-bash.js'
@@ -53,6 +55,24 @@ const RootLayout = ({ children }: Props) => {
   return (
     <ThemeProvider scheme={scheme}>
       <Scripts />
+      <div className="fixed inset-0 -z-10 overflow-hidden">
+        <Particles 
+          quantity={50}
+          ease={80}
+          color="#ffffff"
+          size={0.6}
+        />
+        <ShootingStars 
+          starWidth={20}
+          starHeight={2}
+          starColor="#9E00FF"
+          trailColor="#2EB9DF"
+          minDelay={2000}
+          maxDelay={4000}
+          maxShootingStars={2}
+          staticStarCount={80}
+        />
+      </div>
       {/* // TODO: replace react query */}
       {/* {metaConfig.type !== "Paper" && <Header />} */}
       <Header fullWidth={false} />
