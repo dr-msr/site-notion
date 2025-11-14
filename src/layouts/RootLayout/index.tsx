@@ -7,6 +7,7 @@ import useGtagEffect from "./useGtagEffect"
 import Prism from "prismjs/prism"
 import { ShootingStars } from "@/components/ui/shadcn-io/shooting-stars"
 import { Particles } from "@/components/ui/shadcn-io/particles"
+import MountainSilhouette from "@/components/MountainSilhouette"
 import 'prismjs/components/prism-markup-templating.js'
 import 'prismjs/components/prism-markup.js'
 import 'prismjs/components/prism-bash.js'
@@ -59,7 +60,7 @@ const RootLayout = ({ children }: Props) => {
         <Particles 
           quantity={50}
           ease={80}
-          color="#ffffff"
+          color={scheme === "dark" ? "#ffffff" : "#4a5568"}
           size={0.6}
         />
         <ShootingStars 
@@ -72,6 +73,7 @@ const RootLayout = ({ children }: Props) => {
           maxShootingStars={2}
           staticStarCount={80}
         />
+        <MountainSilhouette />
       </div>
       {/* // TODO: replace react query */}
       {/* {metaConfig.type !== "Paper" && <Header />} */}
