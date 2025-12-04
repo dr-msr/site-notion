@@ -81,6 +81,12 @@ const NotionRenderer: FC<Props> = ({ recordMap }) => {
         .notion-wrapper .notion-list {
           width: 100%;
         }
+        .notion-wrapper .notion-callout .notion-page-icon-inline {
+          display: none !important;
+        }
+        .notion-wrapper .notion-callout .notion-h3 {
+          margin-top: 0 !important;
+        }
       `}</style>
     </div>
   )
