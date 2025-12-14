@@ -21,9 +21,10 @@ const NavBar: React.FC<Props> = ({ isScrolled = false }) => {
   const isMobile = useIsMobile()
   const links = [
     { id: 1, name: "About", to: "/about" },
-    { id: 2, name: "Clinical", to: "/clinical" },
-    { id: 3, name: "Consultancy", to: "/consultancy" },
-    { id: 4, name: "Training", to: "/training" },
+    { id: 2, name: "Digital", to: "/digital" },
+    { id: 3, name: "Clinical", to: "/clinical" },
+    { id: 4, name: "Consultancy", to: "/consultancy" },
+    { id: 5, name: "Training", to: "/training" },
   ]
 
   const handleBack = () => {
