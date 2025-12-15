@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ExtendedRecordMap } from "notion-types"
 import useScheme from "src/hooks/useScheme"
+import usePostsQuery from "src/hooks/usePostsQuery"
 
 // core styles shared by all of react-notion-x (required)
 import "react-notion-x/src/styles.css"
@@ -13,7 +14,7 @@ import "prismjs/themes/prism-tomorrow.css"
 // used for rendering equations (optional)
 
 import "katex/dist/katex.min.css"
-import { FC } from "react"
+import { FC, useMemo } from "react"
 
 const _NotionRenderer = dynamic(
   () => import("react-notion-x").then((m) => m.NotionRenderer),
@@ -45,9 +46,8 @@ const Modal = dynamic(
   }
 )
 
-const mapPageUrl = (id: string) => {
-  return "https://www.notion.so/" + id.replace(/-/g, "")
-}
+// Normalize Notion ID by removing dashes for comparison
+const normalizeId = (id: string) => id.replace(/-/g, "")
 
 type Props = {
   recordMap: ExtendedRecordMap
@@ -55,6 +55,30 @@ type Props = {
 
 const NotionRenderer: FC<Props> = ({ recordMap }) => {
   const [scheme] = useScheme()
+  const posts = usePostsQuery()
+
+  // Create a mapping from normalized page ID to slug
+  const idToSlugMap = useMemo(() => {
+    const map = new Map<string, string>()
+    posts.forEach((post) => {
+      const normalizedId = normalizeId(post.id)
+      map.set(normalizedId, post.slug)
+    })
+    return map
+  }, [posts])
+
+  const mapPageUrl = (id: string) => {
+    const normalizedId = normalizeId(id)
+    const slug = idToSlugMap.get(normalizedId)
+    
+    if (slug) {
+      return `/${slug}`
+    }
+    
+    // Fallback to Notion URL if page not found in posts
+    return "https://www.notion.so/" + normalizedId
+  }
+
   return (
     <div className="notion-wrapper">
       <_NotionRenderer
@@ -80,6 +104,12 @@ const NotionRenderer: FC<Props> = ({ recordMap }) => {
         }
         .notion-wrapper .notion-list {
           width: 100%;
+        }
+        .notion-wrapper .notion-callout .notion-page-icon-inline {
+          display: none !important;
+        }
+        .notion-wrapper .notion-callout .notion-h3 {
+          margin-top: 0 !important;
         }
       `}</style>
     </div>
