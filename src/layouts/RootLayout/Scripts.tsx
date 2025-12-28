@@ -18,6 +18,11 @@ const Scripts: React.FC = () => (
         </Script>
       </>
     )}
+    <Script
+      defer
+      src="https://stat.drmsr.dev/script.js"
+      data-website-id="bb435488-0e6f-4671-b11c-7d475636dfc3"
+    />
   </>
 )
 
