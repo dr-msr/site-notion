@@ -1,5 +1,5 @@
 ---
-title: "BeliBarang — React Native E-Commerce App"
+title: "BeliBarang: React Native E-Commerce App"
 slug: "belibarang"
 date: "2023-12-10"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "A mobile e-commerce application built with React Native and Expo, feat
 thumbnail: null
 ---
 
-# BeliBarang — React Native E-Commerce App
+# BeliBarang: React Native E-Commerce App
 
 **Project Type:** Mobile Application
 **Tech Stack:** React Native, Expo, Firebase, TypeScript

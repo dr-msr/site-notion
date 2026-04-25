@@ -1,5 +1,5 @@
 ---
-title: "Healthcare AI Product Development — From Prototypes to Clinical Tools"
+title: "Healthcare AI Product Development: From Prototypes to Clinical Tools"
 slug: "healthcare-ai-product"
 date: "2024-07-01"
 status: "Public"

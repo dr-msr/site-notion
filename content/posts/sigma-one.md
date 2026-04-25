@@ -1,5 +1,5 @@
 ---
-title: "Σ1 (SomeOne) — AI Persona Cloning System Design"
+title: "Σ1 (SomeOne): AI Persona Cloning System Design"
 slug: "sigma-one"
 date: "2025-04-01"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "System architecture for an AI persona cloning framework: an 8-axis fid
 thumbnail: null
 ---
 
-# Σ1 (SomeOne) — AI Persona Cloning System Design
+# Σ1 (SomeOne): AI Persona Cloning System Design
 
 **Project Type:** System Architecture / AI Research
 **Status:** Design phase

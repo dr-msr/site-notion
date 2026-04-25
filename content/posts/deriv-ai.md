@@ -1,16 +1,16 @@
 ---
-title: "Unleashed AI — Contextual Transaction Analytics"
+title: "Unleashed AI: Contextual Transaction Analytics"
 slug: "deriv-ai"
 date: "2025-02-09"
 status: "Public"
 type: "Post"
 category: ["Portfolio", "AI"]
 tags: ["hackathon", "openai", "nextjs", "typescript", "vectorization", "prisma", "postgresql"]
-summary: "Built a complete full-stack application in 24 hours at the Deriv AI Hackathon — contextual transaction analytics using news vectorization, semantic analysis, and the O1 reasoning model."
+summary: "Built a complete full-stack application in 24 hours at the Deriv AI Hackathon. Contextual transaction analytics using news vectorization, semantic analysis, and the O1 reasoning model."
 thumbnail: null
 ---
 
-# Unleashed AI — Contextual Transaction Analytics
+# Unleashed AI: Contextual Transaction Analytics
 
 **Project Type:** Hackathon Entry (24-hour build)
 **Event:** Deriv AI Hackathon (February 8–9, 2025), Deriv HQ, Cyberjaya

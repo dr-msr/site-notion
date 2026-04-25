@@ -1,5 +1,5 @@
 ---
-title: "Malaysiakini — Medical Myths Debunking Coverage"
+title: "Malaysiakini: Medical Myths Debunking Coverage"
 slug: "media-malaysiakini-medical-myths"
 date: "2018-09-20"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "Malaysiakini covered the medical myths debunking work, focusing on spe
 thumbnail: null
 ---
 
-# Malaysiakini — Medical Myths Debunking Coverage
+# Malaysiakini: Medical Myths Debunking Coverage
 
 Malaysiakini, Malaysia's leading independent online news portal, covered the medical myths debunking work being carried out through the Medical Mythbusters Malaysia initiative. The piece focused on specific examples of health misinformation circulating in Malaysian social media and the systematic approach developed to counter them.
 

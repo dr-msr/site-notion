@@ -1,5 +1,5 @@
 ---
-title: "Medical Mythbusters Malaysia (M3) — Co-Founding a Million-Reader Health Platform"
+title: "Medical Mythbusters Malaysia (M3): Co-Founding a Million-Reader Health Platform"
 slug: "m3-cofounding"
 date: "2017-06-15"
 status: "Public"

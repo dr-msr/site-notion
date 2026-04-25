@@ -1,5 +1,5 @@
 ---
-title: "DrMSR Clinical Tools — Bilingual Clinical Platform"
+title: "DrMSR Clinical Tools: Bilingual Clinical Platform"
 slug: "clinical-tools"
 date: "2025-11-14"
 status: "Public"

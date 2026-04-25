@@ -6,7 +6,7 @@ status: "Public"
 type: "Post"
 category: ["Portfolio", "Community"]
 tags: ["media", "press", "public-health", "padu", "vaccine", "m3"]
-summary: "Featured across major Malaysian media outlets including The Star, Free Malaysia Today, Malay Mail, Malaysiakini, SoyaCincau, and Lowyat.NET — covering public health advocacy, cybersecurity disclosure, and medical misinformation work."
+summary: "Featured across major Malaysian media outlets including The Star, Free Malaysia Today, Malay Mail, Malaysiakini, SoyaCincau, and Lowyat.NET. Covering public health advocacy, cybersecurity disclosure, and medical misinformation work."
 thumbnail: null
 ---
 
@@ -18,27 +18,27 @@ A selection of media coverage spanning public health advocacy, cybersecurity, an
 
 ## Medical Mythbusters Malaysia (M3)
 
-[The Star — Medical Mythbusters Malaysia Feature](/media-the-star-m3)
+[The Star: Medical Mythbusters Malaysia Feature](/media-the-star-m3)
 
-[Health Analytics Asia — M3 Co-Founders Profile](/media-health-analytics-asia-m3)
+[Health Analytics Asia: M3 Co-Founders Profile](/media-health-analytics-asia-m3)
 
 ## Vaccine Confidence & Anti-Misinformation
 
-[Free Malaysia Today — Vaccine Confidence & Anti-Misinformation](/media-fmt-vaccine-confidence)
+[Free Malaysia Today: Vaccine Confidence & Anti-Misinformation](/media-fmt-vaccine-confidence)
 
 ## Medical Myths Coverage
 
-[Malaysiakini — Medical Myths Debunking Coverage](/media-malaysiakini-medical-myths)
+[Malaysiakini: Medical Myths Debunking Coverage](/media-malaysiakini-medical-myths)
 
 ## PADU Security Disclosure (2024)
 
-[Malay Mail — PADU Security Vulnerability Disclosure](/media-malay-mail-padu)
+[Malay Mail: PADU Security Vulnerability Disclosure](/media-malay-mail-padu)
 
-[Lowyat.NET — PADU Security Technical Coverage](/media-lowyat-padu)
+[Lowyat.NET: PADU Security Technical Coverage](/media-lowyat-padu)
 
-[SoyaCincau — PADU Data Security Implications](/media-soyacincau-padu)
+[SoyaCincau: PADU Data Security Implications](/media-soyacincau-padu)
 
-[The Rakyat Post — PADU Public Interest Dimension](/media-rakyat-post-padu)
+[The Rakyat Post: PADU Public Interest Dimension](/media-rakyat-post-padu)
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Workflow Automation Practice — Orchestration Engines, Edge Workers, and Operational Pipelines"
+title: "Workflow Automation Practice: Orchestration Engines, Edge Workers, and Operational Pipelines"
 slug: "automation-practice"
 date: "2025-03-15"
 status: "Public"

@@ -1,5 +1,5 @@
 ---
-title: "Bull's Neck — The Viral Medical Article That Reached a Million Readers"
+title: "Bull's Neck: The Viral Medical Article That Reached a Million Readers"
 slug: "writing-bulls-neck"
 date: "2018-03-15"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "A medical explainer on Ludwig's angina that went viral with approximat
 thumbnail: null
 ---
 
-# Bull's Neck — The Viral Medical Article
+# Bull's Neck: The Viral Medical Article
 
 **Project Type:** Medical Writing / Public Health Communication
 **Platform:** Medical Mythbusters Malaysia (M3)

@@ -6,7 +6,7 @@ status: "Public"
 type: "Post"
 category: ["Writing", "Training"]
 tags: ["mental-health", "workshop", "resilience", "m3", "education"]
-summary: "Reflections from facilitating an emotional resilience workshop for vocational students — on teaching coping skills, bullying intervention, and showing up for young people."
+summary: "Reflections from facilitating an emotional resilience workshop for vocational students. On teaching coping skills, bullying intervention, and showing up for young people."
 thumbnail: null
 ---
 

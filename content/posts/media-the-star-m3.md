@@ -1,5 +1,5 @@
 ---
-title: "The Star — Medical Mythbusters Malaysia Feature"
+title: "The Star: Medical Mythbusters Malaysia Feature"
 slug: "media-the-star-m3"
 date: "2018-03-15"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "The Star featured Medical Mythbusters Malaysia (M3) as a doctor-led in
 thumbnail: null
 ---
 
-# The Star — Medical Mythbusters Malaysia Feature
+# The Star: Medical Mythbusters Malaysia Feature
 
 The Star, one of Malaysia's most widely read English-language newspapers, featured Medical Mythbusters Malaysia (M3) as a doctor-led initiative combating medical misinformation in the country. The piece profiled the organization's approach to countering health myths and its founding team of approximately 28 doctors working collectively to address misinformation at scale.
 

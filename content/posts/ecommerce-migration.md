@@ -6,7 +6,7 @@ status: "Public"
 type: "Post"
 category: ["Portfolio", "Digital", "Automation"]
 tags: ["shopify", "woocommerce", "migration", "dns", "cloudflare", "email-marketing", "e-commerce"]
-summary: "Platform migration and business modernization for a boutique flower delivery business — from diagnosis through custom Shopify theme build, DNS migration, and integration architecture."
+summary: "Platform migration and business modernization for a boutique flower delivery business. From diagnosis through custom Shopify theme build, DNS migration, and integration architecture."
 thumbnail: null
 ---
 

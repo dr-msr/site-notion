@@ -6,7 +6,7 @@ status: "PublicOnDetail"
 type: "Page"
 category: ["Services"]
 tags: []
-summary: "Digital solutions consulting — web development, AI systems, automation, and more. Let's talk about what you need."
+summary: "Digital solutions consulting. Web development, AI systems, automation, and more. Let's talk about what you need."
 ---
 
 # Request for Service
@@ -41,21 +41,21 @@ If you have something else in mind, don't hesitate to ask. I'm open to exploring
 
 ## How It Works
 
-### 1. Discovery Call — complimentary
+### 1. Discovery Call (complimentary)
 
 A one-hour introductory conversation to understand your needs, assess feasibility, and explore what's possible. No commitment, no pressure.
 
-### 2. Proposal & Implementation Plan — complimentary
+### 2. Proposal & Implementation Plan (complimentary)
 
 Within a few days of our call, I'll prepare a detailed proposal covering the technical approach and architecture, tools and platforms involved, project timeline and milestones, and a clear cost breakdown. You'll know exactly what you're getting and what it costs before any work begins.
 
-### 3. Development & Deployment — one-time project fee
+### 3. Development & Deployment (one-time project fee)
 
 Once we agree on the plan, I build and deploy your solution. Development is charged as a one-time project fee based on scope and complexity.
 
 **Important:** The development fee covers my time and expertise. It does not include third-party costs that your project may require, such as domain registration, hosting or cloud infrastructure, API subscriptions, stock images, fonts, or other licensed assets. These are your responsibility, and I'll flag them clearly in the proposal so there are no surprises.
 
-### 4. Maintenance & Support — optional subscription
+### 4. Maintenance & Support (optional subscription)
 
 After deployment, the project is yours. If you'd like ongoing support (bug fixes, updates, feature additions, performance monitoring), you can subscribe to a maintenance plan. This is optional but recommended, especially for projects with live users or business-critical workflows. Maintenance pricing is outlined in the proposal.
 

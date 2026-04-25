@@ -6,7 +6,7 @@ status: "PublicOnDetail"
 type: "Page"
 category: ["About"]
 tags: []
-summary: "Dr. Syamirul — medical doctor, health tech builder, and systems thinker working at the intersection of clinical care, technology, and thoughtful design."
+summary: "Dr. Syamirul: medical doctor, health tech builder, and systems thinker working at the intersection of clinical care, technology, and thoughtful design."
 ---
 
 # About

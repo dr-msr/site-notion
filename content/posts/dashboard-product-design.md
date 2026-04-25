@@ -1,5 +1,5 @@
 ---
-title: "Three-Zoom-Level Product Design — Dashboard UX Architecture"
+title: "Three-Zoom-Level Product Design: Dashboard UX Architecture"
 slug: "dashboard-product-design"
 date: "2025-02-17"
 status: "Public"

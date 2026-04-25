@@ -6,7 +6,7 @@ status: "Public"
 type: "Post"
 category: ["Writing", "Consultancy"]
 tags: ["consulting", "methodology", "value-based-pricing", "client-communication", "freelance"]
-summary: "Discovery-first, value-based consulting methodology — illustrated through a real e-commerce modernization engagement with a non-technical business owner."
+summary: "Discovery-first, value-based consulting methodology. Illustrated through a real e-commerce modernization engagement with a non-technical business owner."
 thumbnail: null
 ---
 

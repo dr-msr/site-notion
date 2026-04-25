@@ -1,5 +1,5 @@
 ---
-title: "SoyaCincau — PADU Data Security Implications"
+title: "SoyaCincau: PADU Data Security Implications"
 slug: "media-soyacincau-padu"
 date: "2024-01-26"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "SoyaCincau, a major Malaysian tech publication, reported on the PADU s
 thumbnail: null
 ---
 
-# SoyaCincau — PADU Data Security Implications
+# SoyaCincau: PADU Data Security Implications
 
 SoyaCincau, one of Malaysia's most widely read technology publications, reported on the responsible disclosure of the critical PADU vulnerability. Their coverage focused on what the vulnerability meant for ordinary Malaysians: the implications for citizen data security when a national database launches with a fundamental authentication flaw.
 

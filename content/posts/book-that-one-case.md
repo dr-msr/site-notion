@@ -1,5 +1,5 @@
 ---
-title: "That One Case — The English Sequel"
+title: "That One Case: The English Sequel"
 slug: "book-that-one-case"
 date: "2019-06-15"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "The English-language follow-up to 25 Kes, rated 3.86/5 on Goodreads. M
 thumbnail: null
 ---
 
-# That One Case — The English Sequel
+# That One Case: The English Sequel
 
 **Project Type:** Published Book
 **Publisher:** Kata-Pilar Books

@@ -1,5 +1,5 @@
 ---
-title: "Wira Vaksin — Ministry of Health Award for Vaccine Advocacy"
+title: "Wira Vaksin: Ministry of Health Award for Vaccine Advocacy"
 slug: "wira-vaksin"
 date: "2019-04-15"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "Awarded 'Wira Vaksin' (Vaccine Hero) by Malaysia's Ministry of Health,
 thumbnail: null
 ---
 
-# Wira Vaksin — Ministry of Health Award
+# Wira Vaksin: Ministry of Health Award
 
 **Recognition:** Wira Vaksin (Vaccine Hero)
 **Awarded by:** Ministry of Health Malaysia

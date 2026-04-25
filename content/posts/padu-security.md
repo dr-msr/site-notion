@@ -1,5 +1,5 @@
 ---
-title: "PADU Security Disclosure — Finding a Critical Vulnerability in Malaysia's National Database"
+title: "PADU Security Disclosure: Finding a Critical Vulnerability in Malaysia's National Database"
 slug: "padu-security"
 date: "2024-01-25"
 status: "Public"

@@ -6,7 +6,7 @@ status: "Public"
 type: "Post"
 category: ["Portfolio", "Creative"]
 tags: ["gamejam", "nextjs", "typescript", "42kl"]
-summary: "A game built during the 42KL Game Jam — exploring interactive design and rapid prototyping under time constraints."
+summary: "A game built during the 42KL Game Jam. Exploring interactive design and rapid prototyping under time constraints."
 thumbnail: null
 ---
 

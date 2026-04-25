@@ -1,5 +1,5 @@
 ---
-title: "Health Analytics Asia — M3 Co-Founders Profile"
+title: "Health Analytics Asia: M3 Co-Founders Profile"
 slug: "media-health-analytics-asia-m3"
 date: "2018-06-01"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "Health Analytics Asia published a profile piece on the Medical Mythbus
 thumbnail: null
 ---
 
-# Health Analytics Asia — M3 Co-Founders Profile
+# Health Analytics Asia: M3 Co-Founders Profile
 
 Health Analytics Asia published a profile piece on the co-founders of Medical Mythbusters Malaysia (M3), focusing on the intersection of healthcare communication and digital reach in Southeast Asia. The piece examined how a group of practicing doctors leveraged social media to build a health literacy platform that reached over a million readers.
 

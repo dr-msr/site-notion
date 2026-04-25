@@ -1,5 +1,5 @@
 ---
-title: "Self-Hosted Infrastructure Stack — 5-Machine Tailscale Mesh"
+title: "Self-Hosted Infrastructure Stack: 5-Machine Tailscale Mesh"
 slug: "self-hosted-infra"
 date: "2025-04-15"
 status: "Public"

@@ -1,5 +1,5 @@
 ---
-title: "Neo-Brutalist Brand & Design System — Dashboard Visual Identity"
+title: "Neo-Brutalist Brand & Design System: Dashboard Visual Identity"
 slug: "dashboard-brand-design"
 date: "2025-02-19"
 status: "Public"

@@ -1,5 +1,5 @@
 ---
-title: "Jering Nephropathy — Medical Journalism for iSihat"
+title: "Jering Nephropathy: Medical Journalism for iSihat"
 slug: "writing-jering-nephropathy"
 date: "2018-06-15"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "A feature article on jering nephropathy published in Majalah iSihat an
 thumbnail: null
 ---
 
-# Jering Nephropathy — Medical Journalism
+# Jering Nephropathy: Medical Journalism
 
 **Project Type:** Medical Feature Article
 **Publication:** Majalah iSihat (Malaysian health magazine)

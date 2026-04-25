@@ -1,5 +1,5 @@
 ---
-title: "25 Kes — A Medical Anthology in Malay"
+title: "25 Kes: A Medical Anthology in Malay"
 slug: "book-25-kes"
 date: "2019-01-15"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "A collection of 25 medical case narratives written in Malay, published
 thumbnail: null
 ---
 
-# 25 Kes — A Medical Anthology in Malay
+# 25 Kes: A Medical Anthology in Malay
 
 **Project Type:** Published Book
 **Publisher:** Kata-Pilar Books

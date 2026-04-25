@@ -1,5 +1,5 @@
 ---
-title: "Free Malaysia Today — Vaccine Confidence & Anti-Misinformation"
+title: "Free Malaysia Today: Vaccine Confidence & Anti-Misinformation"
 slug: "media-fmt-vaccine-confidence"
 date: "2019-02-10"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "Free Malaysia Today, in collaboration with the Vaccine Confidence Proj
 thumbnail: null
 ---
 
-# Free Malaysia Today — Vaccine Confidence & Anti-Misinformation
+# Free Malaysia Today: Vaccine Confidence & Anti-Misinformation
 
 Free Malaysia Today (FMT), one of Malaysia's major independent news outlets, covered the work around debunking anti-vaccination misinformation in Malaysia. The piece was produced in collaboration with the Vaccine Confidence Project, a global initiative tracking public confidence in immunization programs.
 

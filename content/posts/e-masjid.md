@@ -1,5 +1,5 @@
 ---
-title: "E-Masjid.My — Open-Source Mosque Management"
+title: "E-Masjid.My: Open-Source Mosque Management"
 slug: "e-masjid"
 date: "2024-06-01"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "Collaborator on an open-source, MIT-licensed mosque management system 
 thumbnail: null
 ---
 
-# E-Masjid.My — Open-Source Mosque Management
+# E-Masjid.My: Open-Source Mosque Management
 
 **Project Type:** Open-Source Collaboration
 **Role:** Collaborator

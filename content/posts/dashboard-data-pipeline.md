@@ -1,5 +1,5 @@
 ---
-title: "Government Open Data Pipeline — Data Engineering for the Dashboard"
+title: "Government Open Data Pipeline: Data Engineering for the Dashboard"
 slug: "dashboard-data-pipeline"
 date: "2025-02-16"
 status: "Public"

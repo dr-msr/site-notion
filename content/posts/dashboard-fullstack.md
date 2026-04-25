@@ -1,5 +1,5 @@
 ---
-title: "Personal Finance Dashboard — Full-Stack Engineering"
+title: "Personal Finance Dashboard: Full-Stack Engineering"
 slug: "dashboard-fullstack"
 date: "2025-02-15"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "A personal finance dashboard built as a full-stack application: Next.j
 thumbnail: null
 ---
 
-# Personal Finance Dashboard — Full-Stack Engineering
+# Personal Finance Dashboard: Full-Stack Engineering
 
 **Project Type:** Full-Stack Web Application
 **Stack:** Next.js, Supabase (PostgreSQL + Auth), Tailwind CSS

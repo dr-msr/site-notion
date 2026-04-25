@@ -1,5 +1,5 @@
 ---
-title: "The Rakyat Post — PADU Public Interest Dimension"
+title: "The Rakyat Post: PADU Public Interest Dimension"
 slug: "media-rakyat-post-padu"
 date: "2024-01-27"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "The Rakyat Post covered the public interest dimension of a national da
 thumbnail: null
 ---
 
-# The Rakyat Post — PADU Public Interest Dimension
+# The Rakyat Post: PADU Public Interest Dimension
 
 The Rakyat Post covered the PADU security disclosure from a public interest angle, focusing on what it means for citizens when a national database, one designed to hold data on every Malaysian, launches with a critical authentication vulnerability. Their coverage emphasized the civic dimension: the right of citizens to expect security from government digital systems, and the role of responsible disclosure in holding institutions accountable.
 

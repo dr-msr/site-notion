@@ -6,7 +6,7 @@ status: "Public"
 type: "Post"
 category: ["Writing", "Digital"]
 tags: ["emergency-services", "ux", "ai", "malaysia", "public-policy", "nextjs"]
-summary: "A clinician's perspective on Malaysia's 999 emergency system — what it feels like to call it as a doctor, what's broken for laypeople, and a working proof of concept built in 24 hours on a home server."
+summary: "A clinician's perspective on Malaysia's 999 emergency system. What it feels like to call it as a doctor, what's broken for laypeople, and a working proof of concept built in 24 hours on a home server."
 thumbnail: null
 ---
 

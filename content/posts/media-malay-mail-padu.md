@@ -1,5 +1,5 @@
 ---
-title: "Malay Mail — PADU Security Vulnerability Disclosure"
+title: "Malay Mail: PADU Security Vulnerability Disclosure"
 slug: "media-malay-mail-padu"
 date: "2024-01-26"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "Malay Mail reported on the responsible disclosure of a critical securi
 thumbnail: null
 ---
 
-# Malay Mail — PADU Security Vulnerability Disclosure
+# Malay Mail: PADU Security Vulnerability Disclosure
 
 Malay Mail, one of Malaysia's oldest and most established English-language newspapers, reported on the responsible disclosure of a critical password reset vulnerability in PADU, Malaysia's national citizen database. The coverage detailed the vulnerability itself, the responsible disclosure process followed, and the government's response.
 

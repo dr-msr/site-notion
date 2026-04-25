@@ -1,16 +1,16 @@
 ---
-title: "Solat Today — Prayer Times for Malaysia"
+title: "Solat Today: Prayer Times for Malaysia"
 slug: "solat-today"
 date: "2025-01-15"
 status: "Public"
 type: "Post"
 category: ["Portfolio", "Community"]
 tags: ["nextjs", "typescript", "tailwindcss", "jakim", "pwa", "geolocation"]
-summary: "A clean, modern prayer times web app for Muslims in Malaysia — geolocation, JAKIM data, Hijri calendar, and mobile-first design with 43+ commits of iterative development."
+summary: "A clean, modern prayer times web app for Muslims in Malaysia. Geolocation, JAKIM data, Hijri calendar, and mobile-first design with 43+ commits of iterative development."
 thumbnail: null
 ---
 
-# Solat Today — Prayer Times for Malaysia
+# Solat Today: Prayer Times for Malaysia
 
 **Project Type:** Community Tool
 **Live:** [solat.today](https://solat.today) *(currently experiencing API issues)*

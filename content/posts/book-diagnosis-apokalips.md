@@ -1,5 +1,5 @@
 ---
-title: "DIAgnosis Apokalips — Published by MPH"
+title: "DIAgnosis Apokalips: Published by MPH"
 slug: "book-diagnosis-apokalips"
 date: "2020-01-15"
 status: "Public"

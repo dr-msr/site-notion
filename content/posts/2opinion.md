@@ -1,5 +1,5 @@
 ---
-title: "2Opinion — AI-Assisted Medical Document Analysis"
+title: "2Opinion: AI-Assisted Medical Document Analysis"
 slug: "2opinion"
 date: "2024-09-15"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "A medical second opinion tool that uses AI to analyze uploaded clinica
 thumbnail: null
 ---
 
-# 2Opinion — AI-Assisted Medical Document Analysis
+# 2Opinion: AI-Assisted Medical Document Analysis
 
 **Project Type:** Clinical AI Tool
 **Components:** Frontend (Next.js), OCR service, analysis pipeline

@@ -1,5 +1,5 @@
 ---
-title: "Lowyat.NET — PADU Security Technical Coverage"
+title: "Lowyat.NET: PADU Security Technical Coverage"
 slug: "media-lowyat-padu"
 date: "2024-01-26"
 status: "Public"
@@ -10,7 +10,7 @@ summary: "Lowyat.NET, Malaysia's largest technology forum and news site, covered
 thumbnail: null
 ---
 
-# Lowyat.NET — PADU Security Technical Coverage
+# Lowyat.NET: PADU Security Technical Coverage
 
 Lowyat.NET, Malaysia's largest technology forum and news site, covered the technical details of the critical password reset vulnerability discovered in the PADU national database. As a technology-focused outlet, Lowyat.NET's coverage went deeper into the technical specifics of the vulnerability than general news outlets, explaining the authentication flaw and its implications for a technically literate audience.
 

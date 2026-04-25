@@ -1,5 +1,5 @@
 ---
-title: "Self-Hosted 3-Container Architecture — Dashboard Infrastructure"
+title: "Self-Hosted 3-Container Architecture: Dashboard Infrastructure"
 slug: "dashboard-infrastructure"
 date: "2025-02-18"
 status: "Public"
