@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react"
 
-// Update this after deploying the CF Worker
-// Will be: https://request-service.<your-subdomain>.workers.dev
-// Or custom domain: https://api.drmsr.dev
-const WORKER_URL = "https://request-service.drmsr.workers.dev"
+const WORKER_URL = "https://request-service.me-560.workers.dev"
 
 type FormState = "idle" | "submitting" | "success" | "error"
 
