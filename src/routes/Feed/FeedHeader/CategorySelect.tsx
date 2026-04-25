@@ -25,20 +25,32 @@ const CategorySelect: React.FC<Props> = () => {
   }, [])
 
   useEffect(() => {
-    checkOverflow()
+    // Delayed initial check to ensure layout has settled
+    const raf = requestAnimationFrame(() => checkOverflow())
     const el = scrollRef.current
     if (!el) return
     el.addEventListener("scroll", checkOverflow, { passive: true })
     window.addEventListener("resize", checkOverflow)
+
+    // ResizeObserver catches font loading, dynamic content, and container resizes
+    let ro: ResizeObserver | undefined
+    if (typeof ResizeObserver !== "undefined") {
+      ro = new ResizeObserver(() => checkOverflow())
+      ro.observe(el)
+    }
+
     return () => {
+      cancelAnimationFrame(raf)
       el.removeEventListener("scroll", checkOverflow)
       window.removeEventListener("resize", checkOverflow)
+      ro?.disconnect()
     }
   }, [checkOverflow])
 
   // Re-check after categories load/change
   useEffect(() => {
-    checkOverflow()
+    const raf = requestAnimationFrame(() => checkOverflow())
+    return () => cancelAnimationFrame(raf)
   }, [data, checkOverflow])
 
   const scroll = (direction: "left" | "right") => {
@@ -75,7 +87,7 @@ const CategorySelect: React.FC<Props> = () => {
     "flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full text-gray-10 bg-gray-4 hover:bg-gray-6 hover:text-gray-12 transition-colors cursor-pointer"
 
   return (
-    <div className="flex mt-2 mb-2 gap-1.5 items-center">
+    <div className="flex mt-2 mb-2 gap-1.5 items-center min-w-0 flex-1">
       <button
         onClick={() => scroll("left")}
         className={`${arrowClass} ${canScrollLeft ? "opacity-100" : "opacity-0 pointer-events-none"} transition-opacity`}
