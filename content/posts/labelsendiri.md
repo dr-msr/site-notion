@@ -12,7 +12,7 @@ thumbnail: null
 
 # SaaS Landing Page & AI Chatbot
 
-**Project Type:** Client Work (NDA, client anonymized)
+**Project Type:** Client Work
 **Deliverable:** Landing page + AI chatbot platform
 **Tech Stack:** Next.js 16, Tailwind CSS, Shadcn UI, Framer Motion, Docker
 **Features:** Responsive landing page, AI-powered product consultation chatbot, dark mode

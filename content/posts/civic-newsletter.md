@@ -13,7 +13,7 @@ thumbnail: null
 # End-to-End Newsletter Engineering: From Editorial Workflow to Inbox
 
 **Project Type:** Content Infrastructure / Email Engineering
-**Client:** A civic organization (anonymized)
+**Client:** A civic organization
 **Role:** Sole technical lead and production operator
 **Scale:** 2,200+ subscribers, weekly cadence
 

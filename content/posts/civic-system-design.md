@@ -13,7 +13,7 @@ thumbnail: null
 # Geospatial Oversight & AI Content Monitoring: System Design
 
 **Project Type:** System Design (design-phase work)
-**Client:** A civic organization (anonymized)
+**Client:** A civic organization
 **Role:** Sole technical lead and architect
 
 ---

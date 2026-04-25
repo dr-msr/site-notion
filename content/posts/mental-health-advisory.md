@@ -13,7 +13,7 @@ thumbnail: null
 # Designing a Sustainable Advisory Model for Mission-Driven Organizations
 
 **Project Type:** Strategic Advisory Engagement Design
-**Client:** A Malaysian mental health social enterprise (anonymized)
+**Client:** A Malaysian mental health social enterprise
 **Deliverable:** Formal advisory services proposal with structured engagement model
 
 ---

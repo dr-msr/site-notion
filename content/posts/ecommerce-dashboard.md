@@ -13,7 +13,7 @@ thumbnail: null
 # Building a Lightweight Admin Dashboard with Cloudflare Pages and D1
 
 **Project Type:** Full-Stack Development / Edge Computing
-**Client:** A boutique flower delivery business (anonymized)
+**Client:** A boutique flower delivery business
 **Tech Stack:** Cloudflare Pages, Cloudflare D1 (SQLite), Shopify GraphQL Admin API
 
 ---

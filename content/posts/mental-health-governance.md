@@ -13,7 +13,7 @@ thumbnail: null
 # Untangling a Startup's Technical Debt Before It Becomes a Crisis
 
 **Project Type:** Technical Assessment & Platform Governance
-**Client:** A Malaysian mental health social enterprise (anonymized)
+**Client:** A Malaysian mental health social enterprise
 **Deliverable:** Governance risk assessment with prioritized recommendations
 
 ---

@@ -63,12 +63,16 @@ const CategorySelect: React.FC<Props> = () => {
   }
 
   const handleOptionClick = (category: string) => {
-    router.push({
-      query: {
-        ...router.query,
-        category: category === DEFAULT_CATEGORY ? undefined : category,
+    router.push(
+      {
+        query: {
+          ...router.query,
+          category: category === DEFAULT_CATEGORY ? undefined : category,
+        },
       },
-    })
+      undefined,
+      { scroll: false }
+    )
   }
 
   // Create array with Home first, then other categories sorted by count descending

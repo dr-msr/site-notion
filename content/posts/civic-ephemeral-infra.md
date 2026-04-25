@@ -13,7 +13,7 @@ thumbnail: null
 # Outrunning the Block: Ephemeral Deployment Architecture for Censorship-Resistant Publishing
 
 **Project Type:** Infrastructure Engineering / Adversarial Operations
-**Client:** A civic organization operating under regulatory pressure (anonymized)
+**Client:** A civic organization operating under regulatory pressure
 **Role:** Sole technical lead
 **Outcome:** Publication never missed a scheduled send due to infrastructure blocking
 

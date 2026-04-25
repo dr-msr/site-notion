@@ -13,7 +13,7 @@ thumbnail: null
 # From WordPress to Shopify: Modernizing a Boutique Flower Delivery Business
 
 **Project Type:** E-Commerce Consulting / Platform Migration
-**Client:** A boutique flower delivery business (anonymized)
+**Client:** A boutique flower delivery business
 **Engagement:** January–May 2025, phased modular delivery
 **Tech Stack:** Shopify (custom Git theme), Cloudflare, workflow automation engine (cloud-hosted), email marketing service, Meta Commerce Manager
 

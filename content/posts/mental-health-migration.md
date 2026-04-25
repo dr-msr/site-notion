@@ -13,7 +13,7 @@ thumbnail: null
 # Cutting 85% Hosting Costs for a Mental Health Startup
 
 **Project Type:** Infrastructure Migration & Cost Optimization
-**Client:** A Malaysian mental health social enterprise (anonymized)
+**Client:** A Malaysian mental health social enterprise
 **Deliverable:** Completed migration + branded technical report
 
 ---

@@ -13,7 +13,7 @@ thumbnail: null
 # Nadi: End-to-End Warranty Automation
 
 **Project Type:** Automation Engineering / SME Digital Transformation
-**Client:** A Malaysian artisan product company (anonymized)
+**Client:** A Malaysian artisan product company
 **Tech Stack:** Workflow automation engine, self-hosted WhatsApp HTTP API, cloud spreadsheet, managed container platform, Cloudflare R2
 **Deliverables:** 4-component automation system, infrastructure provisioning, operations manual, ongoing maintenance
 
