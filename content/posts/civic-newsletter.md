@@ -23,11 +23,17 @@ thumbnail: null
 
 The organization needed a recurring publication that could deliver content to 2,200+ subscribers weekly, maintain a distinctive visual identity, and operate on near-zero budget with no dedicated design or engineering staff.
 
+![End-to-end newsletter production pipeline from editorial to inbox](/images/portfolio/civic-newsletter-1.png)
+
+
 ## Editorial Tooling
 
 Weekly production cycle with contributor coordination and editorial restructuring. A pen-name system for contributor privacy. Style guide enforcement across editions. The editorial process was as much a design challenge as the technical infrastructure: coordinating contributors, maintaining voice consistency, and shipping on schedule every week.
 
 ## Template Engineering
+
+
+![Email template engineering with vintage newspaper aesthetic wireframe](/images/portfolio/civic-newsletter-2.png)
 
 Custom HTML email templates with a distinctive vintage newspaper aesthetic (warm sepia/teal palette, serif/sans-serif typography pairing). Deep mastery of the mailing platform's Go-based template syntax, including tracking pixel placement, link tracking shorthand, and campaign variable interpolation.
 
@@ -46,3 +52,5 @@ Multiple editions produced and delivered on schedule. Consistent subscriber grow
 Full-stack ownership beyond code: editorial process, visual design, delivery infrastructure, and operational discipline. The ability to operate a complete content production pipeline solo, shipping reliably every week. Email engineering depth that goes beyond "send an email" into template systems, deliverability optimization, and infrastructure management.
 
 *Part of a civic tech engagement. See also: [Ephemeral Deployment Architecture](/civic-ephemeral-infra) and [Geospatial & Content Monitoring System Design](/civic-system-design).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

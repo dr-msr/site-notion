@@ -23,6 +23,9 @@ thumbnail: null
 
 A game built during the 42KL Game Jam, an intensive creative sprint where participants design and develop a playable game within strict time constraints. Built with Next.js and TypeScript, this project pushed beyond my usual domain of healthcare and productivity tools into interactive design and game mechanics.
 
+![Game jam rapid prototyping cycle under 48-hour constraint](/images/portfolio/gamejam42kl-1.png)
+
+
 ## Tech Stack
 
 **Framework:** Next.js, TypeScript
@@ -33,3 +36,5 @@ A game built during the 42KL Game Jam, an intensive creative sprint where partic
 Game jams are exercises in rapid prototyping, creative problem-solving, and shipping under pressure. The skills that make someone effective in a 48-hour game jam (scoping ruthlessly, iterating fast, making trade-offs without paralysis) are the same skills that matter when building products in healthcare or any other domain where constraints are real and deadlines are not negotiable.
 
 This was built during my time at 42KL, a peer-to-peer programming school that shaped how I think about learning, collaboration, and building things from scratch.
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

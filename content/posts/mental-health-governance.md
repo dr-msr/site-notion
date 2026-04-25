@@ -22,11 +22,17 @@ thumbnail: null
 
 Beyond the immediate hosting cost problem, the organization had deeper structural issues stemming from a pattern of isolated, transactional developer engagements with no integrated technical ownership. Previous developers had built components independently, deployed them on personal accounts, and moved on without proper handover.
 
+![Platform governance risk assessment showing fragmented technical ownership](/images/portfolio/mental-health-governance-1.png)
+
+
 The most critical finding: their core booking platform (a Next.js application handling customer payments and peer supporter scheduling) was deployed on a third-party developer's personal Vercel account. The organization had no access to the deployment pipeline. No GitHub-Vercel integration existed. The source code repository showed zero registered deployment environments.
 
 ## What I Found
 
 **Governance Risk.** I traced the deployment chain for the booking platform and discovered it was running on an account the organization did not own or control. Through the GitHub API, I verified that no CI/CD integration existed: zero deployments, zero environments registered against the repository. The previous developer had deployed via `vercel --prod` from a local machine, leaving no audit trail.
+
+
+![Transactional versus integrated technical ownership pattern comparison](/images/portfolio/mental-health-governance-2.png)
 
 The operational risk was severe: if the developer's account hit free tier limits, was suspended, or the project was deleted, the booking platform (their primary revenue tool) would go offline without warning.
 
@@ -43,3 +49,5 @@ The organization's technical problems were not caused by any single bad develope
 Diagnostic and advisory capability, not code output. The ability to see systemic patterns rather than technical symptoms. The governance risk finding (live production system on a third party's personal account) is the kind of discovery that prevents crises rather than responds to them. This is what happens when someone with both technical depth and business awareness examines an organization's infrastructure as a whole rather than one ticket at a time.
 
 *Part of a case study. See also: [Cutting 85% Hosting Costs](/mental-health-migration) and [Designing a Sustainable Advisory Model](/mental-health-advisory).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

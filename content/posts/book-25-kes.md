@@ -24,7 +24,13 @@ thumbnail: null
 
 25 Kes is a collection of twenty-five medical case narratives drawn from clinical practice, written entirely in Malay. Each chapter takes a real clinical encounter and renders it as a story rather than a case report, preserving the diagnostic reasoning while foregrounding the human dimensions that formal medical literature tends to strip away.
 
+![25 Kes conceptual book illustration](/images/portfolio/book-25-kes-1.png)
+
+
 The cases range across specialties and settings. What ties them together is the perspective: a young doctor learning to read patients as people, not just presentations. The writing sits deliberately between clinical precision and literary accessibility, making medical thinking legible to a lay audience without dumbing down the medicine.
+
+
+![Bridge between clinical precision and narrative storytelling](/images/portfolio/book-25-kes-2.png)
 
 ## Why This Matters
 
@@ -37,3 +43,5 @@ The book was published through Kata-Pilar Books, a Malaysian independent publish
 The ability to translate complex clinical reasoning into compelling narrative. Commitment to making medical knowledge accessible in underserved languages. Published authorship through a traditional publishing house, not self-published. And the discipline to complete a book-length manuscript while maintaining active clinical practice.
 
 *See also: [That One Case](/book-that-one-case) (English sequel) and [DIAgnosis Apokalips](/book-diagnosis-apokalips).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

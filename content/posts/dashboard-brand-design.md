@@ -23,9 +23,15 @@ thumbnail: null
 
 Financial dashboards have an aesthetic problem. They almost universally default to one of two looks: corporate blue (trustworthy but cold and generic) or dark-mode fintech (sleek but soulless). For a personal tool, neither felt right. The dashboard needed a visual identity that felt human, approachable, and a little irreverent, something that makes checking your finances feel less like opening a bank statement and more like flipping through a well-designed zine.
 
+![Neo-brutalist design system component sheet](/images/portfolio/dashboard-brand-design-1.png)
+
+
 Neo-brutalism provided the answer. Thick borders, bold typography, generous white (cream) space, and a limited color palette that lets the data be the visual focus without the interface disappearing into corporate blandness.
 
 ## Design System Components
+
+
+![Data visualization style guide with pattern-differentiated charts](/images/portfolio/dashboard-brand-design-2.png)
 
 **Palette.** Cream (#FFF8E7) as the primary background. Orange (#FF6B35) for primary actions, highlights, and data emphasis. Black for borders, text, and structural elements. The palette is deliberately constrained: three colors plus their tints handle every use case, and the warm cream-orange combination prevents the "spreadsheet anxiety" that cool-toned financial interfaces often trigger.
 
@@ -40,3 +46,5 @@ Neo-brutalism provided the answer. Thick borders, bold typography, generous whit
 Design thinking applied to a domain (personal finance) where defaults are rarely questioned. A complete design system, not just a color scheme but typography, components, data visualization rules, and accessibility considerations. The ability to make deliberate, defensible aesthetic choices and articulate why they serve the user. And proof that "doctor who builds things" extends to visual design, not just backend engineering.
 
 *Part of a dashboard project. See also: [Full-Stack Engineering](/dashboard-fullstack), [Government Open Data Pipeline](/dashboard-data-pipeline), [Product Design](/dashboard-product-design), and [Infrastructure](/dashboard-infrastructure).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

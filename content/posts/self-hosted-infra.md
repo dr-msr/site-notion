@@ -23,6 +23,9 @@ thumbnail: null
 
 Five machines connected via Tailscale mesh network, forming a private overlay network with zero public inbound ports. The machines span cloud providers (Oracle Cloud free tier, DigitalOcean) and architectures (ARM64, x86), unified under a single management plane.
 
+![Five-machine Tailscale mesh network topology with service roles](/images/portfolio/self-hosted-infra-1.png)
+
+
 **Container Orchestration.** The deployment platform handles container orchestration and deployment. It is a self-hosted alternative to managed PaaS providers, providing a deployment dashboard for Docker containers without per-container pricing. All client applications, internal tools, and automation infrastructure deploy through this platform.
 
 **Traefik** serves as the reverse proxy and automatic SSL termination layer. Every service gets HTTPS automatically via Let's Encrypt, with routing rules defined in Docker labels rather than nginx configuration files. Cloudflare Tunnel sits in front of Traefik for public-facing services, meaning the actual server IP is never exposed.
@@ -30,6 +33,9 @@ Five machines connected via Tailscale mesh network, forming a private overlay ne
 **MinIO** provides S3-compatible object storage, self-hosted. Used for newsletter image assets (CDN-proxied for public reads), backup storage, and application file storage. The decision to self-host object storage rather than use S3 directly was driven by cost (free tier) and data sovereignty (Malaysian client data stays on infrastructure I control).
 
 **WhatsApp API Gateway.** A self-hosted WhatsApp Business API gateway providing HTTP endpoints for sending and receiving WhatsApp messages without relying on third-party SaaS middleware. It enables the WhatsApp automation workflows described in the automation practice.
+
+
+![CVE security incident response flow from alert to post-mortem](/images/portfolio/self-hosted-infra-2.png)
 
 **Monitoring** runs Prometheus for metrics collection and Grafana for dashboards. Uptime monitoring, container health, disk usage, and network metrics are tracked across all five machines.
 
@@ -50,3 +56,5 @@ The incident was contained with no data loss, no service interruption, and no cl
 Production infrastructure operation, not just deployment scripting. A coherent architecture where every component (mesh networking, container orchestration, reverse proxy, object storage, monitoring) serves a specific purpose and the interactions between them are understood. Cost discipline: this entire stack runs on free tier and minimal-cost instances, proving that enterprise-grade infrastructure patterns do not require enterprise budgets. Security-first design (zero public ports, Tailscale mesh, Cloudflare Tunnel) validated by a real incident response. And the operational maturity to maintain, monitor, and defend running infrastructure, not just build it.
 
 *See also: [Workflow Automation Practice](/automation-practice) and [Ephemeral Deployment Architecture](/civic-ephemeral-infra).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

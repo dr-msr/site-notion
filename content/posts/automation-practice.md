@@ -22,6 +22,9 @@ thumbnail: null
 
 Workflow automation is not a single project but a recurring capability deployed across multiple client engagements. The common thread: businesses running on manual processes (copy-paste between apps, forwarding messages, checking spreadsheets) that can be replaced with event-driven automation without requiring custom application development.
 
+![Workflow automation architecture with orchestration engine and edge workers](/images/portfolio/automation-practice-1.png)
+
+
 The stack centers on a workflow automation engine as the orchestration layer, chosen for its self-hostable nature (no vendor lock-in on workflow definitions), visual workflow builder (clients can understand what the automation does), and extensive integration library. Edge logic runs on Cloudflare Workers for latency-sensitive operations. Hosting varies by client: managed container platforms for cloud deployments, self-hosted on personal infrastructure for internal tools.
 
 ---
@@ -29,6 +32,9 @@ The stack centers on a workflow automation engine as the orchestration layer, ch
 ## E-Commerce Order Pipeline
 
 Built for the boutique flower delivery client. Shopify order webhooks trigger an automation workflow that processes the order, extracts delivery details (date, time slot, message card text, recipient address), formats a notification for the operations team, and pushes it to the appropriate channel. The pipeline replaces a manual process where orders came through WhatsApp, were forwarded to Gmail, and manually entered into a tracking spreadsheet.
+
+
+![E-commerce order processing pipeline from webhook to notification](/images/portfolio/automation-practice-2.png)
 
 ## WhatsApp Sales Automation
 
@@ -49,3 +55,5 @@ An operational dashboard that aggregates automation metrics: workflow execution 
 Workflow automation as a repeatable practice, not a one-off project. The ability to identify manual business processes and replace them with event-driven pipelines. Multi-platform integration (Shopify, WhatsApp, Google Workspace, custom APIs) through a single orchestration layer. Self-hosted infrastructure (WhatsApp API gateway, automation engine instances) that gives clients data sovereignty. And the operational discipline to monitor and maintain automation in production, not just build it and walk away.
 
 *See also: [E-Commerce Platform Migration](/ecommerce-migration), [Nadi Warranty Automation](/nadi-warranty), and [Self-Hosted Infrastructure Stack](/self-hosted-infra).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

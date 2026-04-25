@@ -22,9 +22,15 @@ thumbnail: null
 
 Shopify's native admin interface is powerful but opinionated. For a non-technical business owner managing a small catalog with specific operational needs (seasonal product visibility, delivery logistics, file/media organization), the Shopify admin can feel overwhelming. And Shopify's native media manager is a flat list with no folder hierarchy, which becomes unmanageable as product imagery grows.
 
+![Edge computing architecture with Cloudflare Pages D1 and Shopify API](/images/portfolio/ecommerce-dashboard-1.png)
+
+
 The client needed a simplified view: a dashboard that surfaced only what mattered for daily operations, while the Shopify backend handled the heavy lifting underneath.
 
 ## The Architecture
+
+
+![Deletable convenience layer architecture over core Shopify platform](/images/portfolio/ecommerce-dashboard-2.png)
 
 Rather than building a full CMS, the solution was a lightweight Cloudflare Pages application backed by a D1 (SQLite-at-the-edge) database.
 
@@ -39,3 +45,5 @@ The dashboard was built with a clear constraint: it should be deletable. If the 
 This reflects a broader consulting principle: build tools that make the consultant replaceable, not indispensable.
 
 *Part of an e-commerce engagement. See also: [Platform Migration](/ecommerce-migration) and [Consulting Methodology](/ecommerce-methodology).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

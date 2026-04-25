@@ -22,6 +22,9 @@ thumbnail: null
 
 The dashboard runs as three Docker containers on the self-hosted infrastructure mesh: the Next.js application server, a self-hosted Supabase instance (PostgreSQL with auth and real-time subscriptions), and Traefik handling reverse proxy and SSL termination.
 
+![Three-container Docker architecture on Tailscale mesh with MinIO backup](/images/portfolio/dashboard-infrastructure-1.png)
+
+
 The decision to self-host Supabase rather than use their managed offering was driven by two factors. First, cost: Supabase's free tier has row and storage limits that a personal finance application would eventually hit. Self-hosted has no artificial limits. Second, data sensitivity: personal financial data stays on infrastructure I control, with no third-party access to the database.
 
 ## Deployment
@@ -35,3 +38,5 @@ Database migrations run as part of the deployment pipeline, with automatic backu
 Infrastructure design that matches the application's actual requirements rather than defaulting to managed services. Cost-conscious self-hosting (the entire stack runs on free-tier cloud instances) without sacrificing operational quality. Automated backup and deployment workflows. And the full-stack ownership from application code through database design through infrastructure operation.
 
 *Part of a dashboard project. See also: [Full-Stack Engineering](/dashboard-fullstack), [Government Open Data Pipeline](/dashboard-data-pipeline), [Product Design](/dashboard-product-design), and [Brand & Design System](/dashboard-brand-design).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

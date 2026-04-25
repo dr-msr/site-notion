@@ -23,6 +23,9 @@ thumbnail: null
 
 Over the course of multiple product iterations for a healthcare technology company, I designed and built AI-powered clinical tools that sat at the intersection of medical knowledge and modern AI capabilities. The work spanned from early prototypes to production-ready applications, each iteration refining the approach based on clinical feedback and real-world constraints.
 
+![Healthcare AI product evolution through three iteration stages](/images/portfolio/healthcare-ai-product-1.png)
+
+
 ## What Was Built
 
 **Patient History-Taking Chatbot.** An AI-powered conversational tool designed to collect patient histories while they wait for a doctor consultation. The system guided patients through structured medical questioning, gathered relevant symptoms and history, and prepared a summary for the clinician. This reduced administrative burden on doctors while ensuring consistent, thorough history collection.
@@ -39,6 +42,11 @@ Each prototype addressed different aspects of the same fundamental question: how
 
 Early prototypes focused on conversational flow and medical questioning logic. Later iterations added voice interfaces, emotional awareness, document analysis capabilities, and administrative tools for clinical staff. The progression reflected a deepening understanding of what clinicians and patients actually need, as opposed to what looks impressive in a demo.
 
+
+![Clinical domain expertise intersecting with technical implementation](/images/portfolio/healthcare-ai-product-2.png)
+
 ## What This Demonstrates
 
 Healthcare AI product development requires someone who understands both the clinical domain and the technical implementation. Knowing which questions to ask a patient is a medical skill. Knowing how to structure those questions in a conversational AI flow is a technical skill. Having both in the same person eliminates the translation layer that typically slows healthcare technology development and introduces clinical inaccuracies.
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

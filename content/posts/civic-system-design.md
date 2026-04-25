@@ -22,6 +22,9 @@ thumbnail: null
 
 **Stack:** PostGIS, Next.js, Supabase
 
+![Geospatial oversight platform with cadastral boundary analysis](/images/portfolio/civic-system-design-1.png)
+
+
 A spatial analysis platform designed for detecting and verifying regulatory violations on protected land, integrating government cadastral data with satellite imagery and crowdsourced field reports.
 
 **Core capabilities:** Overlay government cadastral (land parcel) boundary data with current satellite imagery. Crowdsourced report ingestion with geotagged photo evidence. Spatial queries including containment checks, intersection analysis, and buffer zones. Verification workflows for legal teams preparing formal complaints.
@@ -29,6 +32,9 @@ A spatial analysis platform designed for detecting and verifying regulatory viol
 **Documented unsolved problem:** The relevant government survey authority uses a proprietary coordinate projection system not available in any public geodetic database. Accurate coordinate transformation to WGS84 (standard GPS) remains an open precision problem, meaning boundary overlays carry a margin of error that must be disclosed in any legal application.
 
 The honest documentation of an unsolved technical constraint is itself a signal of engineering maturity. The design demonstrates the ability to scope complex systems where technical, regulatory, and legal requirements intersect.
+
+
+![AI content monitoring pipeline with human-in-the-loop editorial review](/images/portfolio/civic-system-design-2.png)
 
 ---
 
@@ -49,3 +55,5 @@ The critical design principle: human-in-the-loop, not human-out-of-the-loop. AI 
 The ability to scope systems that sit at the intersection of technology, regulation, and civic purpose. Practical workflow automation design for real content operations. Appropriate caution around AI-generated content. And the intellectual honesty to label unsolved problems as unsolved rather than burying them in optimistic assumptions.
 
 *Part of a civic tech engagement. See also: [Ephemeral Deployment Architecture](/civic-ephemeral-infra) and [Newsletter Production Pipeline](/civic-newsletter).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

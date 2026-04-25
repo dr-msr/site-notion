@@ -25,6 +25,9 @@ thumbnail: null
 
 A complete full-stack application shipped in 24 hours. Unleashed AI enhances traditional transaction logs by incorporating contextual data: news headlines are vectorized and semantically linked to transaction data, connecting financial events with what was happening in the world at the time.
 
+![Contextual transaction analytics architecture with semantic vectorization](/images/portfolio/deriv-ai-1.png)
+
+
 After an initial mathematical analysis is performed on related data points, the results are refined using O1, OpenAI's reasoning model, to ensure that conclusions are well-supported and logical. As more transactions are logged, even similar transactional values (such as amounts or profits) can have different real-world contexts. The system learns to differentiate these contexts and produces increasingly accurate, real-world relevant analysis.
 
 ## Tech Stack
@@ -40,6 +43,11 @@ Most trading analytics treat transactions as isolated numerical events. A buy or
 
 Unleashed AI makes that context machine-readable. By vectorizing news headlines and associating them semantically with transaction records, the system can surface patterns that pure numerical analysis would miss entirely. The reasoning model then validates these associations, filtering noise from genuine contextual insight.
 
+
+![24-hour hackathon build timeline showing rapid product development cycle](/images/portfolio/deriv-ai-2.png)
+
 ## Why It Matters
 
 This was a 24-hour build that demonstrated not just coding speed but product thinking under pressure: identifying a real analytical gap in social trading, designing a data architecture that could meaningfully address it, and shipping something functional enough to demo with real data flowing through it. The semantic vectorization approach to enriching financial data with world-context is a pattern that scales well beyond this specific use case.
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

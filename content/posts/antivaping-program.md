@@ -25,6 +25,9 @@ thumbnail: null
 
 A statewide initiative targeting secondary school students with a four-module anti-vaping curriculum. The program combined expert-led clinical lectures with VIPP (Visualization in Participatory Planning) participatory activities, a well-established methodology in health education.
 
+![Four-module anti-vaping program architecture and stakeholder mapping](/images/portfolio/antivaping-program-1.png)
+
+
 The design used a near-peer education model: university pharmacy students (closer in age to the audience) served as facilitators for group activities, while medical professionals delivered the clinical content. This bridged credibility with relatability.
 
 ## Design Philosophy
@@ -41,8 +44,13 @@ The design used a near-peer education model: university pharmacy students (close
 
 I was responsible for the clinical health module (Module 1: Vape Chemicals & Organ Damage). This included designing the content, delivering it at the Training of Trainers session, iterating based on field feedback, and contributing to overall program architecture and module sequencing decisions.
 
+
+![Near-peer education model showing knowledge cascade from experts to students](/images/portfolio/antivaping-program-2.png)
+
 ## What This Demonstrates
 
 Public health program design at scale. Grant-funded project execution. Stakeholder management across government health departments, university faculties, and school systems. Curriculum architecture that balances clinical rigor with age-appropriate engagement. Health communication strategy that respects its audience.
 
 *This is part of a three-entry case study. See also: [Training 100 Future Pharmacists](/antivaping-training) and [Building an Interactive Game for Health Education](/antivaping-edtech).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

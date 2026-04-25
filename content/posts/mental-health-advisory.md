@@ -22,6 +22,9 @@ thumbnail: null
 
 After completing infrastructure migration work, the organization continued reaching out informally for technical guidance: questions about platform decisions, infrastructure access, evaluating vendor proposals, preparing for government integration meetings. The founding team had begun treating me as their default technical point of contact without a corresponding formal structure or compensation.
 
+![Fortnightly advisory engagement model with capacity building cycle](/images/portfolio/mental-health-advisory-1.png)
+
+
 This created a classic consulting trap: the most valuable work (strategic framing, architectural recommendations, vendor evaluation) was being given away for free through informal channels, while the only paid work was discrete, transactional tasks.
 
 ## What I Designed
@@ -43,3 +46,5 @@ Social enterprises deserve well-resourced, properly compensated partnerships, no
 Consulting practice maturity. The ability to recognize when an engagement model isn't serving either party and to design something better. Empathy for resource-constrained clients without defaulting to undercharging. Non-technical stakeholder communication with founders from psychology, business administration, and advocacy backgrounds.
 
 *Part of a case study. See also: [Cutting 85% Hosting Costs](/mental-health-migration) and [Platform Governance Assessment](/mental-health-governance).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

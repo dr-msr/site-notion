@@ -23,6 +23,9 @@ thumbnail: null
 
 A Malaysian SME selling handcrafted decorative wall art needed to automate their entire product warranty lifecycle. Their existing process was fully manual: customers buy a product, fill out a Google Form for warranty registration, and then someone on the team manually verifies the submission, sends a WhatsApp message confirming warranty activation, and tracks everything by hand in a spreadsheet. This doesn't scale, and it breaks down outside business hours.
 
+![Four-component warranty automation system architecture](/images/portfolio/nadi-warranty-1.png)
+
+
 ## What Was Built
 
 A system called Nadi (Malay for "pulse") that automates the full warranty journey end-to-end, with zero manual intervention required during normal operation.
@@ -30,6 +33,9 @@ A system called Nadi (Malay for "pulse") that automates the full warranty journe
 **Warranty Submission Processor.** The engine. Monitors the cloud spreadsheet for new form submissions and runs a multi-step validation pipeline: Malaysian phone number normalisation (handling +60, 60, and 0 prefix variants), duplicate detection, prior-activation checks, and WhatsApp number existence verification via the WhatsApp HTTP API. Valid entries get a personalised welcome message in Malay with masked email and dynamically calculated warranty dates. Invalid entries get descriptive error statuses written back to the sheet, plus a generated manual activation link as fallback.
 
 **Incoming Message Router & Warranty Activator.** Handles all inbound WhatsApp messages. When a customer replies "YA" to the welcome message, the workflow looks up their record, marks the warranty as confirmed, sends a Malay-language confirmation, and notifies the admin group. Architecture is intentionally lean to accommodate future message-driven features.
+
+
+![Multi-step warranty validation pipeline with phone normalization and verification](/images/portfolio/nadi-warranty-2.png)
 
 **Admin Notification Utility.** A reusable sub-workflow that centralises all admin-facing notifications (new registrations, successful activations, errors) into a single WhatsApp group. Any component that needs to alert the team routes through this rather than implementing its own notification logic.
 
@@ -48,3 +54,5 @@ A system called Nadi (Malay for "pulse") that automates the full warranty journe
 ## Full-Service Delivery
 
 This wasn't "here's your code, good luck." The project included requirements gathering (in-person), system architecture documentation, WhatsApp message template co-design with the client, a formal project completion report delivered via wiki with an operations manual written for a non-technical admin audience, and ongoing monthly maintenance.
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

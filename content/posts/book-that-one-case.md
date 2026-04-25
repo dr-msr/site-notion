@@ -24,6 +24,9 @@ thumbnail: null
 
 That One Case is the English-language sequel to 25 Kes, expanding the medical case narrative format for an international audience. Where 25 Kes was written for Malaysian readers in Malay, this book was a conscious decision to rewrite the approach in English, not a translation but a reimagining.
 
+![Bilingual authorship concept showing Malay and English editions](/images/portfolio/book-that-one-case-1.png)
+
+
 The cases in this collection carry the same editorial philosophy: real clinical encounters rendered as stories, with the diagnostic thinking intact but the humanity amplified. The shift to English allowed for a different kind of precision in the prose, and opened the work to a broader readership.
 
 ## Reception
@@ -35,3 +38,5 @@ The book holds a 3.86 out of 5 rating on Goodreads, which for a niche medical na
 Bilingual authorship at a published level, not just casual writing but books that went through editorial process and commercial distribution. The ability to adapt voice and register across languages while maintaining core narrative quality. And a track record of completing and shipping creative work through traditional publishing channels.
 
 *See also: [25 Kes](/book-25-kes) (Malay original) and [DIAgnosis Apokalips](/book-diagnosis-apokalips).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

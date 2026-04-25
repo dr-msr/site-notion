@@ -22,6 +22,9 @@ thumbnail: null
 
 A data engineering pipeline that pulls publicly available economic data from Malaysian government open data portals, cleans and normalizes it, and loads it into the dashboard's database for contextual analysis alongside personal financial data.
 
+![ETL pipeline from government open data portals to PostgreSQL](/images/portfolio/dashboard-data-pipeline-1.png)
+
+
 The goal is to provide economic context to personal finance trends. When your spending on groceries increases 15% month-over-month, is that a personal behavior change or is it tracking the national CPI for food? When your fuel spending drops, is it because you drove less or because pump prices changed? The government data pipeline provides the reference frame that turns personal finance data from isolated numbers into situated analysis.
 
 ## Pipeline Stages
@@ -30,8 +33,13 @@ Ingestion pulls from government data portals via their published APIs and CSV ex
 
 The pipeline runs on a scheduled cadence, with monitoring for source availability (government portals have unannounced maintenance windows) and data freshness (some datasets update monthly, others quarterly, some stop updating without notice).
 
+
+![Personal finance data contextualized with national economic indicators](/images/portfolio/dashboard-data-pipeline-2.png)
+
 ## What This Demonstrates
 
 Data engineering beyond "call an API": handling real-world data quality issues from institutional sources. ETL pipeline design with idempotency and monitoring. The ability to combine heterogeneous data sources (personal transactions, government statistics) into a unified analytical layer. And the intellectual curiosity to add economic context to what could have been a simple expense tracker.
 
 *Part of a dashboard project. See also: [Full-Stack Engineering](/dashboard-fullstack), [Product Design](/dashboard-product-design), [Infrastructure](/dashboard-infrastructure), and [Brand & Design System](/dashboard-brand-design).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

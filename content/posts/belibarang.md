@@ -22,6 +22,9 @@ thumbnail: null
 
 BeliBarang is a mobile e-commerce application built with React Native and Expo. The app provides location-aware shopping capabilities, connecting buyers with nearby sellers and products.
 
+![React Native mobile app architecture with Firebase and geolocation services](/images/portfolio/belibarang-1.png)
+
+
 ## Tech Stack
 
 **Mobile Framework:** React Native with Expo (Router for navigation, Image Picker, Location services, Splash Screen)
@@ -31,6 +34,11 @@ BeliBarang is a mobile e-commerce application built with React Native and Expo. 
 **Data:** CSV and Parquet file handling for product catalogue management
 **Animations:** Lottie for micro-animations
 
+
+![Geolocation-based proximity search concept for location-aware shopping](/images/portfolio/belibarang-2.png)
+
 ## Why It Matters
 
 This project represents my mobile development capabilities. While most of my work is web-based (Next.js, React), BeliBarang demonstrates fluency in the React Native ecosystem: native device APIs (camera, geolocation), Firebase integration for real-time data, and cross-platform deployment through Expo. The geolocation features (proximity-based search, Google Places integration, distance calculations) are the kind of location-aware functionality that translates directly to healthcare applications like clinic finders or house-call service areas.
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

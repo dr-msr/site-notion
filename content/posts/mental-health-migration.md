@@ -22,6 +22,9 @@ thumbnail: null
 
 A mental health social enterprise providing peer support services was paying RM470/month (approximately RM5,640/year) for shared hosting on a legacy provider. The plan was overprovisioned for their actual traffic, and the provider refused downgrade requests. Their infrastructure was fragmented across multiple platforms with no centralized management.
 
+![Infrastructure migration before and after with 85 percent cost reduction](/images/portfolio/mental-health-migration-1.png)
+
+
 Their tech stack at the time: a WordPress landing page, a Laravel + Redis assessment tool for B2B mental health questionnaires, a Next.js booking platform for peer supporter scheduling and payments, DNS managed through the hosting provider's panel, domain registration through Squarespace, and email on Zoho free tier. Several deprecated subdomains still pointed to inactive services.
 
 ## What I Did
@@ -41,3 +44,5 @@ Monthly hosting cost reduced from RM470 to approximately RM80. Annualized saving
 Multi-platform migration planning across WordPress, Laravel, DNS, and email. Cloudflare DNS configuration including email routing preservation. Risk assessment and stakeholder communication for non-technical founders. Professional technical documentation (branded report with phased deliverables) that established the standard used in subsequent client engagements.
 
 *Part of a case study. See also: [Platform Governance Assessment](/mental-health-governance) and [Designing a Sustainable Advisory Model](/mental-health-advisory).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

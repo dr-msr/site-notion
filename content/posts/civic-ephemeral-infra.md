@@ -23,11 +23,17 @@ thumbnail: null
 
 A civic organization's web presence was subject to recurring DNS-level censorship. Each new domain or subdomain was blocked within days of detection, severing access to subscriber management, newsletter archives, and public content. Enterprise anti-censorship tooling was cost-prohibitive. The entire technical operation was a one-person team.
 
+![Ephemeral deployment architecture outpacing DNS-level censorship](/images/portfolio/civic-ephemeral-infra-1.png)
+
+
 ## The Solution
 
 An ephemeral deployment pattern on a PaaS provider. A fresh service instance with a randomized subdomain is deployed on a weekly cadence, staying ahead of the regulator's detection-to-block lag (approximately 3 days). PostgreSQL serves as the sole persistent component, surviving across disposable application instances. The newsletter platform (a custom fork of an open-source mailing list manager) reconnects to persistent storage on each redeployment, requiring no subscriber data migration.
 
 **Network security posture:** Zero public inbound ports on the development server (ARM64 cloud VM). Cloudflare Tunnel for all public-facing traffic, eliminating direct IP exposure. Tailscale mesh for private administrative access. VPN with foreign exit node for operationally sensitive tasks.
+
+
+![Subscriber-integrated magic link authentication flow across three systems](/images/portfolio/civic-ephemeral-infra-2.png)
 
 ## Technical Depth
 
@@ -46,3 +52,5 @@ This magic-link-to-commenting-engine auth bridge via edge worker is three system
 Adversarial engineering: building for environments where the infrastructure itself is a target. Solo technical leadership across infrastructure, DevOps, editorial tooling, and platform design. Resourcefulness over resources: cloud free tiers, open-source tooling, PaaS ephemeral instances, no enterprise budget but enterprise-grade operational thinking. Intellectual honesty: mitigations are labeled as mitigations, not fixes.
 
 *Part of a civic tech engagement. See also: [Newsletter Production Pipeline](/civic-newsletter) and [Geospatial & Content Monitoring System Design](/civic-system-design).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

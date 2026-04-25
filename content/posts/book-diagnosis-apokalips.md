@@ -22,6 +22,9 @@ thumbnail: null
 
 DIAgnosis Apokalips is a medical narrative published through MPH Group Publishing, one of Malaysia's largest and most established publishing houses. The title is a deliberate wordplay: "DIAgnosis" splits into "DIA" (Malay for "he/she/they") and "gnosis" (knowledge), while "Apokalips" carries the weight of revelation and finality that a medical diagnosis often holds for patients.
 
+![DIAgnosis Apokalips typographic wordplay concept](/images/portfolio/book-diagnosis-apokalips-1.png)
+
+
 Being published through MPH represented a significant step up from independent publishing. MPH's distribution network meant the book reached major bookstores across Malaysia, giving it physical shelf presence that independent titles rarely achieve.
 
 ## What This Demonstrates
@@ -29,3 +32,5 @@ Being published through MPH represented a significant step up from independent p
 Published through a major commercial publisher, not self-published or vanity press. National distribution through Malaysia's bookstore network. A body of work (three books) that demonstrates sustained creative output alongside clinical practice. The progression from independent publisher (Kata-Pilar) to major publisher (MPH) shows a trajectory in the writing career, not just a one-off project.
 
 *See also: [25 Kes](/book-25-kes) and [That One Case](/book-that-one-case).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

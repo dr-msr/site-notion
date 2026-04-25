@@ -22,6 +22,9 @@ thumbnail: null
 
 Σ1 (pronounced "SomeOne," stylized as Sigma-One) is a system design for creating and deploying high-fidelity AI personas that replicate a real person's communication style, knowledge domains, reasoning patterns, and behavioral tendencies. Not a chatbot that sounds vaguely like someone. A structured replication framework with measurable fidelity axes and controlled distribution.
 
+![Eight-axis persona fidelity model radar chart](/images/portfolio/sigma-one-1.png)
+
+
 The premise is that current "custom GPT" or "persona prompt" approaches are shallow: they capture surface-level tone but miss the deeper structure of how a specific person thinks, what they know, how they handle ambiguity, and where their blind spots are. Σ1 treats persona replication as an engineering problem with quantifiable dimensions.
 
 ## Architecture
@@ -41,3 +44,5 @@ Each axis is scored independently, allowing partial deployments (high linguistic
 AI system architecture that goes beyond "prompt engineering" into structured replication frameworks. The ability to decompose a fuzzy concept ("make an AI that sounds like me") into measurable, engineerable dimensions. Distribution design that considers access control, fidelity degradation, and ethical boundaries as first-class architectural concerns. And integration design (MCP server) that connects to the emerging agent infrastructure ecosystem rather than building in isolation.
 
 This is design-phase work. The architecture is documented, the fidelity model is specified, but the system has not been deployed at scale. The value here is in the thinking, not the running code.
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

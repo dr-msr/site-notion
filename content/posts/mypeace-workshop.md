@@ -16,6 +16,9 @@ thumbnail: null
 **Venue:** Kolej Vokasional Sepang, Selangor
 **Collaborators:** Yayasan Hasanah, Ministry of Finance
 
+
+![MyPEACE emotional resilience toolkit components](/images/portfolio/mypeace-workshop-1.png)
+
 ---
 
 On December 12, 2025, I found myself standing in front of vocational students in Sepang, not as a doctor lecturing about pathology or treatment algorithms, but as someone trying to hand them something more fundamental: skills to survive the noise of being seventeen.
@@ -29,6 +32,9 @@ I opened with a slide that read: "This is a skills session, not a 'you are broke
 Because that's the thing. Resilience isn't a personality trait you're either born with or not. It's trainable, the same way riding a bicycle or hiking is trainable. You practice, you fall, you recalibrate, you get better. The problem is that we live in a culture that pathologizes normal human struggle, and then when young people actually need help, they either don't seek it (because asking for help means you're broken) or they get handed clichés instead of tools.
 
 So I gave them tools. The emotion wheel, to help them move from vague, paralyzing feelings to specific, nameable ones. Grounding techniques for when panic hijacks the nervous system. The S.T.O.P. method (Stop, Take a step back, Observe, Proceed mindfully) for when they're about to explode. The I.D.E.A.L. framework for long-term problem solving. I walked them through automatic negative thoughts (ANTs), those reflexive cognitive distortions that turn minor setbacks into catastrophic narratives.
+
+
+![Workshop delivery model with facilitators students and resource distribution](/images/portfolio/mypeace-workshop-2.png)
 
 The challenge with workshops like this is always the same: you can't force insight. You can only create the conditions for it. Some students were engaged, others visibly skeptical. One kid in the back looked like he'd rather be anywhere else. Fair enough. At seventeen, I probably would have reacted the same way if some doctor had tried to teach me how to breathe through my problems.
 
@@ -49,3 +55,5 @@ Because the alternative (not showing up, not trying, not believing that young pe
 Stress is inevitable. But skills are learnable.
 
 And that matters.
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

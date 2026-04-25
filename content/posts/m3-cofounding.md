@@ -25,6 +25,12 @@ thumbnail: null
 
 Medical Mythbusters Malaysia is a doctor-led collective dedicated to countering medical misinformation in Malaysia. Co-founded with approximately 28 other medical doctors, M3 operates as a content production and rapid-response platform where practicing clinicians create evidence-based counter-narratives to health misinformation circulating in Malaysian social media.
 
+![Misinformation response platform producing counter-narratives at matching shareability](/images/portfolio/m3-cofounding-1.png)
+
+
+
+![Organic reach scaling from single article to million-reader impact](/images/portfolio/m3-cofounding-2.png)
+
 The model is simple in concept, difficult in execution: when a piece of medical misinformation goes viral, M3 produces a response that is equally shareable but backed by evidence. The key insight was that institutional health communication (press releases, official statements) cannot compete with viral misinformation on shareability. The counter-narrative has to be just as emotionally compelling, just as visually engaging, and just as easy to share.
 
 ## Scale and Impact
@@ -38,3 +44,5 @@ The vaccine advocacy work through M3 was recognized with the Wira Vaksin (Vaccin
 The ability to co-found and sustain a volunteer organization of professionals. Content strategy that achieves organic reach at scale without paid promotion. Bilingual (Malay-English) health communication design. Coordination of a distributed team of 28+ doctors with varying schedules and availability. And proof that doctor-led, evidence-based content can compete with misinformation for public attention when the communication design is right.
 
 *See also: [Bull's Neck Viral Article](/writing-bulls-neck), [Wira Vaksin Award](/wira-vaksin), and [National Media Appearances](/media-appearances).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

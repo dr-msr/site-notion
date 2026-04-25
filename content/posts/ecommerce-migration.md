@@ -23,9 +23,15 @@ thumbnail: null
 
 The client had been running on a self-managed WordPress/WooCommerce stack for several years. Online orders had slowed to a trickle. The founder's instinct was that migrating to Shopify would solve the problem.
 
+![Platform migration from fragmented WordPress stack to unified Shopify ecosystem](/images/portfolio/ecommerce-migration-1.png)
+
+
 Before touching any code, discovery reframed the conversation. The problem wasn't the platform. WordPress/WooCommerce is perfectly capable for this use case. The real bottleneck was a combination of factors: traffic volume too low for Google to even index performance metrics, a fragmented workflow where orders came through WhatsApp and were manually forwarded to Gmail, technical debt from layered ChatGPT-generated code snippets and multi-site configurations, and a trust deficit from a previous developer who had locked the founder out of his own domain (requiring police intervention to recover access).
 
 The recommendation: yes, migrate to Shopify, but not because WordPress is inferior. Migrate because the founder's role demanded less time fighting infrastructure and more time on marketing, product, and operations. Shopify would buy back focus.
+
+
+![Shopify as canonical PIM with downstream integration architecture](/images/portfolio/ecommerce-migration-2.png)
 
 ## What Was Delivered
 
@@ -42,3 +48,5 @@ The recommendation: yes, migrate to Shopify, but not because WordPress is inferi
 Phased, value-based pricing: RM500 in the first month, scaling to RM1,000 as deliverables expanded. No large upfront payment. No vendor lock-in. All credentials in the client's name. All infrastructure designed to be handoverable: if the engagement ended tomorrow, the client would retain full ownership and access to everything built. Platform costs absorbed during trial period and billed to the client only after launch.
 
 *Part of an e-commerce engagement. See also: [Edge Admin Dashboard](/ecommerce-dashboard) and [Consulting Methodology](/ecommerce-methodology).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

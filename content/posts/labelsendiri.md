@@ -23,6 +23,9 @@ thumbnail: null
 
 A modern web platform for a Malaysian business specializing in custom labels, stickers, and branding solutions. The project comprised two main components: a responsive landing page designed to convert visitors into leads, and an AI-powered chatbot interface ready for integration with conversational AI backends.
 
+![SaaS landing page and AI chatbot platform architecture](/images/portfolio/labelsendiri-1.png)
+
+
 ## Tech Stack
 
 **Framework:** Next.js 16 with App Router, representing the latest in the Next.js ecosystem.
@@ -38,3 +41,5 @@ The landing page was designed with a mobile-first responsive approach and full d
 ## What This Demonstrates
 
 End-to-end client delivery: from understanding a non-technical client's business needs to shipping a containerized, production-ready platform. The combination of a conversion-focused landing page with an AI chatbot represents the kind of practical AI application that small businesses can actually use, not a research project, but a tool that answers customer questions and drives revenue.
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

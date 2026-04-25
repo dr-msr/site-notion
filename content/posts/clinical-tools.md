@@ -22,6 +22,9 @@ thumbnail: null
 
 A modern clinical tools platform designed for my own practice and for use by other Malaysian clinicians. Built with Next.js 14's App Router for optimal performance, the platform provides clinical utilities and reference tools with full bilingual support in English and Bahasa Melayu.
 
+![Bilingual clinical platform wireframe with neobrutalism design elements](/images/portfolio/clinical-tools-1.png)
+
+
 ## Design
 
 The platform uses a neobrutalism design system: bold borders, strong shadows, high-contrast colors. This isn't just aesthetic preference. In clinical settings, interfaces need to be immediately readable under varying lighting conditions and by users who may be multitasking between patients. Neobrutalism's emphasis on clarity and visual hierarchy serves a functional purpose.
@@ -33,6 +36,11 @@ The platform uses a neobrutalism design system: bold borders, strong shadows, hi
 **Internationalization:** next-intl for proper bilingual support, not just translated strings but locale-aware formatting and content structure.
 **Deployment:** Dockerized with standalone output, ready for self-hosted deployment or cloud platforms.
 
+
+![Docker deployment architecture for Next.js 14 clinical application](/images/portfolio/clinical-tools-2.png)
+
 ## Why It Matters
 
 Clinical tools built by clinicians work differently than tools built by developers for clinicians. The mental model is different. When I build a clinical calculator or reference tool, I'm building it for the workflow I actually use, not the workflow someone described in a requirements document. The bilingual support reflects the reality of Malaysian clinical practice, where practitioners switch between English (for medical terminology and documentation) and Malay (for patient communication) constantly.
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

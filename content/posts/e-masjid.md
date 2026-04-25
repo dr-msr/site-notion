@@ -24,6 +24,9 @@ thumbnail: null
 
 E-Masjid.My is a free, open-source mosque management system released under the MIT license. It provides tools for mosque administrators to manage their operations digitally, with a strong emphasis on being accessible to people who are not IT professionals.
 
+![Open-source mosque management platform architecture](/images/portfolio/e-masjid-1.png)
+
+
 ## Philosophy
 
 The project is guided by a few core principles that resonate deeply with my own values:
@@ -46,3 +49,5 @@ The project is guided by a few core principles that resonate deeply with my own 
 ## My Contribution
 
 As a collaborator, I contributed to the development and testing of the system, bringing both technical skills and an understanding of community needs from my experience in healthcare and community-oriented technology projects.
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

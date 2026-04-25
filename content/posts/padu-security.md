@@ -26,7 +26,13 @@ thumbnail: null
 
 PADU launched as Malaysia's centralised citizen database, intended to be the backbone of the government's targeted subsidy mechanism. Within hours of its public launch, I identified a critical vulnerability in the password reset flow that could have allowed unauthorized access to citizen accounts.
 
+![PADU security disclosure timeline from discovery to ministerial response](/images/portfolio/padu-security-1.png)
+
+
 The vulnerability was documented in a detailed technical writeup published on Hashnode and a tweet thread that broke down the issue for a general audience. The disclosure reached approximately 1.3 million views across platforms. The response was swift: the responsible minister acknowledged the issue on the same day, and the government team deployed a patch.
+
+
+![Password reset vulnerability flow analysis concept](/images/portfolio/padu-security-2.png)
 
 ## The Reach
 
@@ -45,3 +51,5 @@ The same-day ministerial response demonstrated that responsible disclosure, when
 Security awareness as a default lens, not a specialized service. The ability to assess authentication flows critically and communicate findings to both technical and non-technical audiences. Understanding of responsible disclosure protocols and civic engagement when public systems have vulnerabilities. The composure to handle national media attention around a sensitive government system. And the reach to make a security finding matter at scale: 1.3 million views, 6+ media outlets, ministerial engagement, all from a single individual's disclosure.
 
 *See also: [National Media Appearances](/media-appearances).*
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*

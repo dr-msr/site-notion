@@ -24,6 +24,9 @@ Malaysia's 999 system sits right in the middle of that intersection.
 
 In GP settings, when we encounter an emergency that needs pre-hospital care or an ambulance transfer, we generally have two paths.
 
+![Next-generation emergency system architecture with three connectivity tiers](/images/portfolio/ng999-redesign-1.png)
+
+
 If a private ambulance is available and the patient is willing to pay, we might go that route. Otherwise, we fall back on the public emergency response system, which usually means MERS 999.
 
 The system, at least from my experience, does not really distinguish whether the caller is a layperson or a clinician. Yes, we can sometimes call the hospital emergency department directly, but if what we need is an ambulance dispatched as part of an emergency medical response, the path still runs through 999.
@@ -93,6 +96,9 @@ A device that can open a mobile browser can also, with the user's permission, ac
 The new NG-999, if we are serious, should treat these capabilities as standard building blocks, not optional extras. The default experience for an emergency web app should look like this:
 
 You tap a short URL, and the browser immediately requests permission to use your location, microphone, and camera. The system gracefully degrades if any of these are not available, but it does not assume the lowest common denominator by default.
+
+
+![Emergency call user journey from URL tap to ambulance dispatch with real-time ETA](/images/portfolio/ng999-redesign-2.png)
 
 Instead of relying entirely on a voice call, it can initiate a combined session: location is locked in, voice is captured, video can be shared when safe to do so, and all of this is made visible to responders on the other side.
 
@@ -175,3 +181,5 @@ At the very least, we should be honest about what we are building, who it serves
 Because when you are the one holding the phone over a stranger on the road, or over a patient in your clinic, the difference between a system that truly understands urgency and one that just pretends to be "next generation" is not a technical detail.
 
 It is life, mediated through design.
+
+*\* Images are conceptualized, not the real implementation to protect client's intellectual right*
