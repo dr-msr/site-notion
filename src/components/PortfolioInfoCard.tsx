@@ -151,25 +151,18 @@ const PortfolioInfoCard: React.FC<Props> = ({ fields }) => {
   if (!fields.length) return null
 
   return (
-    <div className="portfolio-info-card my-6 rounded-2xl overflow-hidden">
-      <div className="p-[1px] rounded-2xl bg-gradient-to-br from-blue-7 via-indigo-6 to-gray-6">
-        <div className="rounded-2xl bg-gray-2 dark:bg-gray-3 p-5 md:p-6">
-          <div className="text-xs font-semibold uppercase tracking-wider text-gray-9 mb-4">
-            Project Details
+    <div className="my-4 rounded-lg bg-gray-3 dark:bg-gray-3 px-4 py-3">
+      <div className="space-y-1.5">
+        {fields.map((field, idx) => (
+          <div key={idx} className="flex flex-col sm:flex-row sm:gap-2">
+            <div className="text-xs font-medium text-gray-9 sm:min-w-[120px] sm:flex-shrink-0">
+              {field.label}
+            </div>
+            <div className="text-xs text-gray-12 leading-relaxed">
+              {renderValue(field.value)}
+            </div>
           </div>
-          <div className="space-y-3">
-            {fields.map((field, idx) => (
-              <div key={idx} className="flex flex-col sm:flex-row sm:gap-3">
-                <div className="text-sm font-semibold text-gray-11 sm:min-w-[140px] sm:flex-shrink-0">
-                  {field.label}
-                </div>
-                <div className="text-sm text-gray-12 leading-relaxed">
-                  {renderValue(field.value)}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   )

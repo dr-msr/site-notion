@@ -38,9 +38,9 @@ const PostHeader: React.FC<Props> = ({ data }) => {
               )}
             </div>
           </div>
-          <div className="mid flex mb-4 items-center justify-center">
+          <div className="mid mb-4 w-full flex justify-center">
             {data.tags && (
-              <div className="tags flex overflow-x-auto flex-nowrap max-w-full gap-1.5">
+              <div className="tags flex overflow-x-auto flex-nowrap max-w-full gap-1.5 scrollbar-none px-1">
                 {data.tags.map((tag: string) => (
                   <Tag key={tag}>{tag}</Tag>
                 ))}
