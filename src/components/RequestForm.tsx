@@ -68,15 +68,15 @@ const RequestForm: React.FC = () => {
 
   if (formState === "success") {
     return (
-      <div className="mt-8 p-8 rounded-2xl border-2 border-green-8 bg-green-2 text-center">
-        <CheckCircle className="w-12 h-12 mx-auto mb-4 text-green-9" />
-        <h3 className="text-xl font-semibold text-gray-12 mb-2">Request Submitted</h3>
-        <p className="text-gray-11">
+      <div className="mt-4 md:mt-6 p-4 md:p-6 rounded-2xl bg-gray-3 text-center max-w-full">
+        <CheckCircle className="w-10 h-10 mx-auto mb-3 text-gray-11" />
+        <h3 className="text-lg font-semibold text-gray-12 mb-1.5">Request Submitted</h3>
+        <p className="text-sm text-gray-11">
           Thank you for your interest. I will review your request and get back to you within 48 hours.
         </p>
         <button
           onClick={() => setFormState("idle")}
-          className="mt-6 px-6 py-2 rounded-xl text-sm font-medium
+          className="mt-4 px-5 py-2 rounded-xl text-sm font-medium
             bg-gray-12 text-gray-1 hover:opacity-90 transition-opacity"
         >
           Submit Another Request
@@ -86,8 +86,8 @@ const RequestForm: React.FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mt-4 md:mt-8 space-y-3 md:space-y-5">
-      <div className="p-4 md:p-6 rounded-2xl border border-gray-6 bg-gray-1 dark:bg-gray-3 dark:border-gray-5 space-y-3 md:space-y-5">
+    <form onSubmit={handleSubmit} className="mt-3 md:mt-6 max-w-full">
+      <div className="p-3 md:p-5 rounded-2xl bg-gray-3 space-y-3 md:space-y-4 overflow-hidden max-w-full box-border">
         <div>
           <label htmlFor="req-name" className="block text-sm font-medium text-gray-11 mb-1 md:mb-1.5">
             Name <span className="text-red-9">*</span>
@@ -102,7 +102,7 @@ const RequestForm: React.FC = () => {
             className="w-full px-3 py-2 md:px-4 md:py-2.5 rounded-xl border border-gray-6 bg-white dark:bg-gray-4
               text-gray-12 placeholder:text-gray-8
               focus:outline-none focus:ring-2 focus:ring-gray-8 focus:border-transparent
-              transition-all text-sm"
+              transition-all text-sm box-border"
           />
         </div>
 
@@ -120,7 +120,7 @@ const RequestForm: React.FC = () => {
             className="w-full px-3 py-2 md:px-4 md:py-2.5 rounded-xl border border-gray-6 bg-white dark:bg-gray-4
               text-gray-12 placeholder:text-gray-8
               focus:outline-none focus:ring-2 focus:ring-gray-8 focus:border-transparent
-              transition-all text-sm"
+              transition-all text-sm box-border"
           />
         </div>
 
@@ -137,7 +137,7 @@ const RequestForm: React.FC = () => {
             className="w-full px-3 py-2 md:px-4 md:py-2.5 rounded-xl border border-gray-6 bg-white dark:bg-gray-4
               text-gray-12 placeholder:text-gray-8
               focus:outline-none focus:ring-2 focus:ring-gray-8 focus:border-transparent
-              transition-all text-sm"
+              transition-all text-sm box-border"
           />
         </div>
 
@@ -155,7 +155,7 @@ const RequestForm: React.FC = () => {
             className="w-full px-3 py-2 md:px-4 md:py-2.5 rounded-xl border border-gray-6 bg-white dark:bg-gray-4
               text-gray-12 placeholder:text-gray-8
               focus:outline-none focus:ring-2 focus:ring-gray-8 focus:border-transparent
-              transition-all text-sm resize-y min-h-[120px]"
+              transition-all text-sm box-border resize-y min-h-[120px]"
           />
         </div>
 
@@ -164,7 +164,7 @@ const RequestForm: React.FC = () => {
         )}
 
         {formState === "error" && (
-          <div className="flex items-start gap-2 p-3 rounded-xl bg-red-2 border border-red-6 text-red-11 text-sm">
+          <div className="flex items-start gap-2 p-3 rounded-xl bg-gray-4 text-gray-11 text-sm">
             <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
             <span>{errorMessage}</span>
           </div>
