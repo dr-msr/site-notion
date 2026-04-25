@@ -1,9 +1,4 @@
-import { CONFIG } from "site.config"
 import React from "react"
-
-const d = new Date()
-const y = d.getFullYear()
-const from = +CONFIG.since
 
 type Props = {
   className?: string
@@ -12,14 +7,12 @@ type Props = {
 const Footer: React.FC<Props> = ({ className }) => {
   return (
     <div className={`text-center ${className || ""}`}>
-      <a
-        href={`https://github.com/${CONFIG.profile.github}`}
-        target="_blank"
-        rel="noreferrer"
-        className="mt-3 text-sm leading-5 text-gray-10"
-      >
-        © {CONFIG.profile.name} {from === y || !from ? y : `${from} - ${y}`}
-      </a>
+      <p className="mt-3 text-sm leading-5 text-gray-10">
+        DRMSR Digital & Health Solutions
+      </p>
+      <p className="text-xs text-gray-10">
+        202503327216 (RA0130627-P)
+      </p>
     </div>
   )
 }
