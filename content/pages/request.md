@@ -6,22 +6,22 @@ status: "PublicOnDetail"
 type: "Page"
 category: ["Services"]
 tags: []
-summary: "Free development opportunities to build your portfolio project — websites, AI solutions, automation tools, and more."
+summary: "Digital solutions consulting — web development, AI systems, automation, and more. Let's talk about what you need."
 ---
 
 # Request for Service
 
-For a limited time, I'm offering free development opportunities to build your portfolio project. Whether you need a website, AI solution, or automation tool, let's explore what we can create together.
+I build digital solutions for businesses, organisations, and individuals. Whether you need a website, an AI-powered tool, or an automation system, submit a request above and I'll be in touch within 48 hours to schedule a discovery call.
 
 ---
 
 ## What I Can Build For You
 
-I specialize in building digital solutions across several domains.
+I work across several domains, and most projects combine more than one.
 
 ### Web Development
 
-Personal websites and portfolios, e-commerce platforms, Linktree/bio link pages, and custom web applications.
+Personal websites and portfolios, e-commerce platforms, Linktree and bio link pages, and custom web applications.
 
 ### AI & Intelligent Systems
 
@@ -31,44 +31,48 @@ Custom GPT chatbots with RAG (Retrieval-Augmented Generation), local AI model de
 
 Sales and lead generation bots, customer support automation, knowledge base chatbots, and multi-channel bot deployment.
 
+### Automation & Workflow Engineering
+
+End-to-end business process automation, notification systems, data pipelines, and integration between tools your team already uses.
+
 If you have something else in mind, don't hesitate to ask. I'm open to exploring projects beyond this list.
 
 ---
 
 ## How It Works
 
-### 1. Discovery Call (1 hour, free)
+### 1. Discovery Call — complimentary
 
-We'll have an introductory conversation to understand your needs, current pain points, and assess the feasibility of your project. This is a collaborative session where we explore what's possible.
+A one-hour introductory conversation to understand your needs, assess feasibility, and explore what's possible. No commitment, no pressure.
 
-### 2. Development Plan (delivered within 3 days, free)
+### 2. Proposal & Implementation Plan — complimentary
 
-After our call, I'll prepare a comprehensive Proof of Concept (POC) development plan. This includes the technical approach and architecture, tools and platforms required, timeline and milestones, monthly subscription cost breakdown, and any upfront costs if applicable.
+Within a few days of our call, I'll prepare a detailed proposal covering the technical approach and architecture, tools and platforms involved, project timeline and milestones, and a clear cost breakdown. You'll know exactly what you're getting and what it costs before any work begins.
 
-### 3. Development & Deployment (minimal to zero cost)
+### 3. Development & Deployment — one-time project fee
 
-Once we agree on the plan, I'll build and deploy your solution. You'll only pay for specific requirements like custom domain names. Otherwise, I'll provide free alternatives.
+Once we agree on the plan, I build and deploy your solution. Development is charged as a one-time project fee based on scope and complexity.
 
-### 4. Subscription Begins
+**Important:** The development fee covers my time and expertise. It does not include third-party costs that your project may require, such as domain registration, hosting or cloud infrastructure, API subscriptions, stock images, fonts, or other licensed assets. These are your responsibility, and I'll flag them clearly in the proposal so there are no surprises.
 
-After successful deployment, your monthly subscription starts based on the agreed pricing. This covers hosting, maintenance, and ongoing support.
+### 4. Maintenance & Support — optional subscription
 
-### 5. Future Modifications
-
-Any changes or additions after deployment are treated as revisions and may incur additional development and subscription costs, which we'll discuss upfront.
+After deployment, the project is yours. If you'd like ongoing support (bug fixes, updates, feature additions, performance monitoring), you can subscribe to a maintenance plan. This is optional but recommended, especially for projects with live users or business-critical workflows. Maintenance pricing is outlined in the proposal.
 
 ---
 
-## Pricing Model
+## Pricing Overview
 
-**Development Cost:** Minimal to zero (except for specific requirements like custom domains)
+**Discovery + Proposal:** Complimentary. You get a full picture of the project before spending anything.
 
-**Monthly Subscription:** Presented in the development plan, varies based on complexity of the solution, tools and services required, and scale and usage requirements.
+**Development:** One-time project fee, scoped and quoted in the proposal. Varies by complexity, timeline, and technical requirements.
 
-**Revisions:** Quoted separately when requested.
+**Infrastructure & Assets:** Billed separately by the respective providers. I'll recommend cost-effective options and document everything you'll need.
+
+**Maintenance:** Optional monthly subscription for ongoing support, quoted in the proposal alongside the development fee.
 
 ---
 
 ## Ready to Start?
 
-Fill out the form below to request your project. I'll review your submission and reach out within 48 hours to schedule our discovery call.
+Use the form at the top of this page to submit your request. I'll review it and reach out within 48 hours.
