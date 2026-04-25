@@ -19,25 +19,27 @@ const CategorySelect: React.FC<Props> = () => {
     })
   }
 
-  // Create array with Home first (representing DEFAULT_CATEGORY), then other categories (excluding DEFAULT_CATEGORY)
-  const otherCategories = Object.keys(data).filter(key => key !== DEFAULT_CATEGORY)
-  // Use the DEFAULT_CATEGORY count directly (it already represents total posts)
+  // Create array with Home first, then other categories sorted by count descending
+  const otherCategories = Object.keys(data)
+    .filter(key => key !== DEFAULT_CATEGORY)
+    .map(key => ({ key, label: key, count: data[key] }))
+    .sort((a, b) => b.count - a.count)
   const homeCount = data[DEFAULT_CATEGORY] || 0
-  
+
   const categories = [
     { key: DEFAULT_CATEGORY, label: "Home", count: homeCount },
-    ...otherCategories.map(key => ({ key, label: key, count: data[key] }))
+    ...otherCategories
   ]
 
   return (
-    <div className="flex mt-2 mb-2 gap-2 items-center flex-wrap">
+    <div className="flex mt-2 mb-2 gap-2 items-center overflow-x-auto flex-nowrap scrollbar-none">
       {categories.map((category) => {
         const isActive = currentCategory === category.key
         return (
           <button
             key={category.key}
             onClick={() => handleOptionClick(category.key)}
-            className={`px-3 py-1 rounded-full text-sm leading-5 font-medium transition-colors ${
+            className={`px-3 py-1 rounded-full text-sm leading-5 font-medium transition-colors flex-shrink-0 whitespace-nowrap ${
               isActive
                 ? "bg-gray-6 text-gray-12 dark:bg-gray-6 dark:text-gray-12"
                 : "bg-transparent text-gray-12 hover:bg-gray-6 hover:text-gray-12 dark:text-gray-10 dark:hover:bg-gray-6 dark:hover:text-gray-12"

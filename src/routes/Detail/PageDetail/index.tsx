@@ -10,8 +10,8 @@ const PageDetail: React.FC<Props> = () => {
   if (!data) return null
   return (
     <div className="mx-auto max-w-3xl">
-      <MarkdownRenderer content={data.content} />
       {data.slug === "request" && <RequestForm />}
+      <MarkdownRenderer content={data.content} />
     </div>
   )
 }

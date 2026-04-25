@@ -86,10 +86,10 @@ const RequestForm: React.FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mt-8 space-y-5">
-      <div className="p-6 rounded-2xl border border-gray-6 bg-gray-1 dark:bg-gray-3 dark:border-gray-5 space-y-5">
+    <form onSubmit={handleSubmit} className="mt-4 md:mt-8 space-y-3 md:space-y-5">
+      <div className="p-4 md:p-6 rounded-2xl border border-gray-6 bg-gray-1 dark:bg-gray-3 dark:border-gray-5 space-y-3 md:space-y-5">
         <div>
-          <label htmlFor="req-name" className="block text-sm font-medium text-gray-11 mb-1.5">
+          <label htmlFor="req-name" className="block text-sm font-medium text-gray-11 mb-1 md:mb-1.5">
             Name <span className="text-red-9">*</span>
           </label>
           <input
@@ -99,7 +99,7 @@ const RequestForm: React.FC = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Your full name"
-            className="w-full px-4 py-2.5 rounded-xl border border-gray-6 bg-white dark:bg-gray-4
+            className="w-full px-3 py-2 md:px-4 md:py-2.5 rounded-xl border border-gray-6 bg-white dark:bg-gray-4
               text-gray-12 placeholder:text-gray-8
               focus:outline-none focus:ring-2 focus:ring-gray-8 focus:border-transparent
               transition-all text-sm"
@@ -107,7 +107,7 @@ const RequestForm: React.FC = () => {
         </div>
 
         <div>
-          <label htmlFor="req-email" className="block text-sm font-medium text-gray-11 mb-1.5">
+          <label htmlFor="req-email" className="block text-sm font-medium text-gray-11 mb-1 md:mb-1.5">
             Email <span className="text-red-9">*</span>
           </label>
           <input
@@ -117,7 +117,7 @@ const RequestForm: React.FC = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="your@email.com"
-            className="w-full px-4 py-2.5 rounded-xl border border-gray-6 bg-white dark:bg-gray-4
+            className="w-full px-3 py-2 md:px-4 md:py-2.5 rounded-xl border border-gray-6 bg-white dark:bg-gray-4
               text-gray-12 placeholder:text-gray-8
               focus:outline-none focus:ring-2 focus:ring-gray-8 focus:border-transparent
               transition-all text-sm"
@@ -125,7 +125,7 @@ const RequestForm: React.FC = () => {
         </div>
 
         <div>
-          <label htmlFor="req-phone" className="block text-sm font-medium text-gray-11 mb-1.5">
+          <label htmlFor="req-phone" className="block text-sm font-medium text-gray-11 mb-1 md:mb-1.5">
             Phone / WhatsApp
           </label>
           <input
@@ -134,7 +134,7 @@ const RequestForm: React.FC = () => {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             placeholder="+60 12-345 6789"
-            className="w-full px-4 py-2.5 rounded-xl border border-gray-6 bg-white dark:bg-gray-4
+            className="w-full px-3 py-2 md:px-4 md:py-2.5 rounded-xl border border-gray-6 bg-white dark:bg-gray-4
               text-gray-12 placeholder:text-gray-8
               focus:outline-none focus:ring-2 focus:ring-gray-8 focus:border-transparent
               transition-all text-sm"
@@ -142,17 +142,17 @@ const RequestForm: React.FC = () => {
         </div>
 
         <div>
-          <label htmlFor="req-message" className="block text-sm font-medium text-gray-11 mb-1.5">
+          <label htmlFor="req-message" className="block text-sm font-medium text-gray-11 mb-1 md:mb-1.5">
             Tell me about your project <span className="text-red-9">*</span>
           </label>
           <textarea
             id="req-message"
             required
-            rows={5}
+            rows={4}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="What do you need? What problem are you trying to solve? Any timeline or budget constraints?"
-            className="w-full px-4 py-2.5 rounded-xl border border-gray-6 bg-white dark:bg-gray-4
+            className="w-full px-3 py-2 md:px-4 md:py-2.5 rounded-xl border border-gray-6 bg-white dark:bg-gray-4
               text-gray-12 placeholder:text-gray-8
               focus:outline-none focus:ring-2 focus:ring-gray-8 focus:border-transparent
               transition-all text-sm resize-y min-h-[120px]"
@@ -173,7 +173,7 @@ const RequestForm: React.FC = () => {
         <button
           type="submit"
           disabled={formState === "submitting"}
-          className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl
+          className="w-full flex items-center justify-center gap-2 px-4 py-2.5 md:px-6 md:py-3 rounded-xl
             bg-gray-12 text-gray-1 font-medium text-sm
             hover:opacity-90 transition-all duration-200
             disabled:opacity-50 disabled:cursor-not-allowed"
