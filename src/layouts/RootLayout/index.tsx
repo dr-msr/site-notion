@@ -79,7 +79,7 @@ const RootLayout = ({ children }: Props) => {
       {/* // TODO: replace react query */}
       {/* {metaConfig.type !== "Paper" && <Header />} */}
       <Header fullWidth={false} />
-      <main className="mx-auto w-full max-w-[1120px] px-4">{children}</main>
+      <main className="mx-auto w-full max-w-[1120px] px-4 pb-20 md:pb-4">{children}</main>
       <RequestFAB />
     </ThemeProvider>
   )
