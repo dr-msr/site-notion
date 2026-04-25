@@ -8,6 +8,7 @@ import Prism from "prismjs/prism"
 import { ShootingStars } from "@/components/ui/shadcn-io/shooting-stars"
 import { Particles } from "@/components/ui/shadcn-io/particles"
 import MountainSilhouette from "@/components/MountainSilhouette"
+import RequestFAB from "@/components/RequestFAB"
 import 'prismjs/components/prism-markup-templating.js'
 import 'prismjs/components/prism-markup.js'
 import 'prismjs/components/prism-bash.js'
@@ -79,6 +80,7 @@ const RootLayout = ({ children }: Props) => {
       {/* {metaConfig.type !== "Paper" && <Header />} */}
       <Header fullWidth={false} />
       <main className="mx-auto w-full max-w-[1120px] px-4">{children}</main>
+      <RequestFAB />
     </ThemeProvider>
   )
 }
