@@ -18,25 +18,27 @@ A selection of media coverage spanning public health advocacy, cybersecurity, an
 
 ## Medical Mythbusters Malaysia (M3)
 
-**The Star** featured M3 as a doctor-led initiative combating medical misinformation in Malaysia, profiling the organization's approach and its founding team.
+[The Star — Medical Mythbusters Malaysia Feature](/media-the-star-m3)
 
-**Health Analytics Asia** published a profile piece on the M3 co-founders, focusing on the intersection of healthcare communication and digital reach in Southeast Asia.
+[Health Analytics Asia — M3 Co-Founders Profile](/media-health-analytics-asia-m3)
 
 ## Vaccine Confidence & Anti-Misinformation
 
-**Free Malaysia Today (FMT)**, in collaboration with the **Vaccine Confidence Project**, covered the work around debunking anti-vaccination misinformation in Malaysia. This was during a period of rising vaccine hesitancy, and the piece highlighted the approach of meeting misinformation with evidence-based counter-narratives rather than institutional authority.
+[Free Malaysia Today — Vaccine Confidence & Anti-Misinformation](/media-fmt-vaccine-confidence)
 
 ## Medical Myths Coverage
 
-**Malaysiakini** covered the medical myths debunking work, focusing on specific examples of health misinformation circulating in Malaysian social media and the systematic approach to countering them.
+[Malaysiakini — Medical Myths Debunking Coverage](/media-malaysiakini-medical-myths)
 
 ## PADU Security Disclosure (2024)
 
-Following the responsible disclosure of a critical vulnerability in Malaysia's national PADU database, four major outlets covered the story:
+[Malay Mail — PADU Security Vulnerability Disclosure](/media-malay-mail-padu)
 
-**Malay Mail** reported on the security vulnerability and the responsible disclosure process. **Lowyat.NET**, Malaysia's largest technology forum and news site, covered the technical details. **SoyaCincau**, a major Malaysian tech publication, reported on the implications for citizen data security. **The Rakyat Post** covered the public interest dimension of a national database launching with a fundamental authentication flaw.
+[Lowyat.NET — PADU Security Technical Coverage](/media-lowyat-padu)
 
-The PADU coverage was notable because it was not sought. The disclosure was made through proper channels, the government patched the vulnerability, and the media coverage followed from public interest in the security of a system that affects every Malaysian citizen.
+[SoyaCincau — PADU Data Security Implications](/media-soyacincau-padu)
+
+[The Rakyat Post — PADU Public Interest Dimension](/media-rakyat-post-padu)
 
 ---
 
