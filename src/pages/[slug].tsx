@@ -3,7 +3,7 @@ import { filterPosts } from "src/libs/utils/notion"
 import { CONFIG } from "site.config"
 import { NextPageWithLayout } from "../types"
 import CustomError from "src/routes/Error"
-import { getRecordMap, getPosts } from "src/apis"
+import { getPostContent, getPosts } from "src/apis"
 import MetaConfig from "src/components/MetaConfig"
 import { GetStaticProps } from "next"
 import { queryKey } from "src/constants/queryKey"
@@ -22,15 +22,14 @@ export const getStaticPaths = async () => {
 
   return {
     paths: filteredPost.map((row) => `/${row.slug}`),
-    fallback: true,
+    fallback: false,
   }
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  // Create a fresh QueryClient for each regeneration to avoid state leakage
   const queryClient = new QueryClient()
-  
-  const slug = context.params?.slug
+
+  const slug = context.params?.slug as string
 
   const posts = await getPosts()
   const feedPosts = filterPosts(posts)
@@ -38,21 +37,22 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const detailPosts = filterPosts(posts, filter)
   const postDetail = detailPosts.find((t: any) => t.slug === slug)
-  const recordMap = await getRecordMap(postDetail?.id!)
+
+  if (!postDetail) {
+    return { notFound: true }
+  }
+
+  const content = await getPostContent(slug)
 
   await queryClient.prefetchQuery(queryKey.post(`${slug}`), () => ({
     ...postDetail,
-    recordMap,
+    content,
   }))
-
-  const revalidatedAt = new Date().toISOString()
 
   return {
     props: {
       dehydratedState: dehydrate(queryClient),
-      revalidatedAt, // Debug timestamp for testing
     },
-    revalidate: CONFIG.revalidateTime,
   }
 }
 

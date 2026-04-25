@@ -1,1 +1,1 @@
-export * from "./notion-client"
+export { getPosts, getPostContent } from "./local/getPosts"

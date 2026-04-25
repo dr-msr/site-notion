@@ -3,7 +3,7 @@ import PostHeader from "./PostHeader"
 import Footer from "./PostFooter"
 import CommentBox from "./CommentBox"
 import Category from "src/components/Category"
-import NotionRenderer from "../components/NotionRenderer"
+import MarkdownRenderer from "../components/MarkdownRenderer"
 import usePostQuery from "src/hooks/usePostQuery"
 
 type Props = {}
@@ -27,7 +27,7 @@ const PostDetail: React.FC<Props> = () => {
         )}
         {data.type[0] === "Post" && <PostHeader data={data} />}
         <div>
-          <NotionRenderer recordMap={data.recordMap} />
+          <MarkdownRenderer content={data.content} />
         </div>
         {data.type[0] === "Post" && (
           <>

@@ -9,21 +9,15 @@ import { QueryClient, dehydrate } from "@tanstack/react-query"
 import { filterPosts } from "src/libs/utils/notion"
 
 export const getStaticProps: GetStaticProps = async () => {
-  // Create a fresh QueryClient for each regeneration to avoid state leakage
   const queryClient = new QueryClient()
-  
+
   const posts = filterPosts(await getPosts())
   await queryClient.prefetchQuery(queryKey.posts(), () => posts)
-
-  const revalidatedAt = new Date().toISOString()
-  console.log(`[getStaticProps] Regenerating homepage at ${revalidatedAt}`)
 
   return {
     props: {
       dehydratedState: dehydrate(queryClient),
-      revalidatedAt, // Debug timestamp for testing
     },
-    revalidate: CONFIG.revalidateTime,
   }
 }
 

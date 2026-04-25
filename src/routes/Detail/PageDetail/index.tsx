@@ -1,5 +1,5 @@
 import React from "react"
-import NotionRenderer from "../components/NotionRenderer"
+import MarkdownRenderer from "../components/MarkdownRenderer"
 import usePostQuery from "src/hooks/usePostQuery"
 type Props = {}
 
@@ -9,7 +9,7 @@ const PageDetail: React.FC<Props> = () => {
   if (!data) return null
   return (
     <div className="mx-auto max-w-3xl">
-      <NotionRenderer recordMap={data.recordMap} />
+      <MarkdownRenderer content={data.content} />
     </div>
   )
 }

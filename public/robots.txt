@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://v1.drmsr.link
+
+# Sitemaps
+Sitemap: https://v1.drmsr.link/sitemap.xml
