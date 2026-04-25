@@ -5,7 +5,7 @@ date: "2025-09-01"
 status: "Public"
 type: "Post"
 category: ["Portfolio", "Automation"]
-tags: ["system-design", "postgis", "geospatial", "n8n", "ai-pipeline", "automation"]
+tags: ["system-design", "postgis", "geospatial", "automation-engine", "ai-pipeline", "automation"]
 summary: "System designs for a geospatial analysis platform detecting regulatory violations on protected land, and an AI-assisted content monitoring pipeline with human-in-the-loop editorial review."
 thumbnail: null
 ---
@@ -34,7 +34,7 @@ The honest documentation of an unsolved technical constraint is itself a signal 
 
 ## AI-Assisted Content Monitoring Pipeline
 
-**Orchestration:** n8n
+**Orchestration:** Workflow automation engine
 
 A workflow-automated pipeline that monitors news and social sources for domain-relevant developments, filters by keyword relevance, and produces AI-assisted editorial drafts for human review.
 

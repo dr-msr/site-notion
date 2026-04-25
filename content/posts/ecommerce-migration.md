@@ -5,7 +5,7 @@ date: "2025-02-01"
 status: "Public"
 type: "Post"
 category: ["Portfolio", "Digital", "Automation"]
-tags: ["shopify", "woocommerce", "migration", "dns", "cloudflare", "brevo", "e-commerce"]
+tags: ["shopify", "woocommerce", "migration", "dns", "cloudflare", "email-marketing", "e-commerce"]
 summary: "Platform migration and business modernization for a boutique flower delivery business — from diagnosis through custom Shopify theme build, DNS migration, and integration architecture."
 thumbnail: null
 ---
@@ -15,7 +15,7 @@ thumbnail: null
 **Project Type:** E-Commerce Consulting / Platform Migration
 **Client:** A boutique flower delivery business (anonymized)
 **Engagement:** January–May 2025, phased modular delivery
-**Tech Stack:** Shopify (custom Git theme), Cloudflare, n8n on Railway, Brevo, Meta Commerce Manager
+**Tech Stack:** Shopify (custom Git theme), Cloudflare, workflow automation engine (cloud-hosted), email marketing service, Meta Commerce Manager
 
 ---
 
@@ -31,11 +31,11 @@ The recommendation: yes, migrate to Shopify, but not because WordPress is inferi
 
 **Shopify Store Build.** Custom theme built from scratch via Git (not a purchased theme), with luxury minimalist design. The store was designed around the actual purchase flow for flower delivery: hero imagery, collection browsing, product variants, delivery date/time selection, message cards, and add-on products. Mobile-first responsive design with urgency counters, auto-close logic for next-day delivery cutoffs, and welcome voucher popup tied to newsletter signup.
 
-**DNS & Hosting Migration.** DNS migrated from legacy hosting to Cloudflare, with the primary domain proxied and a store subdomain CNAME'd to Shopify. Email infrastructure audited and preserved: nine active mailboxes confirmed, passwords reset. Brevo staged for newsletter automation with DKIM/DMARC records prepared.
+**DNS & Hosting Migration.** DNS migrated from legacy hosting to Cloudflare, with the primary domain proxied and a store subdomain CNAME'd to Shopify. Email infrastructure audited and preserved: nine active mailboxes confirmed, passwords reset. An email marketing service staged for newsletter automation with DKIM/DMARC records prepared.
 
 **Product Data Migration.** WooCommerce catalog migrated to Shopify using the native Store Importer. Deliberately chose the built-in tool over a custom API pipeline: reduced engineering overhead and was well-documented for the client to understand.
 
-**Integration Architecture.** Shopify positioned as the canonical Product Information Manager, feeding downstream into Meta Commerce Manager for Facebook, Instagram, and WhatsApp catalog sync. Automation workflows built on n8n (hosted on Railway) for operational notifications and order processing, with Cloudflare Workers handling lighter logic.
+**Integration Architecture.** Shopify positioned as the canonical Product Information Manager, feeding downstream into Meta Commerce Manager for Facebook, Instagram, and WhatsApp catalog sync. Automation workflows built on a workflow automation engine (cloud-hosted) for operational notifications and order processing, with Cloudflare Workers handling lighter logic.
 
 ## Consulting Approach
 

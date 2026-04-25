@@ -5,8 +5,8 @@ date: "2025-04-15"
 status: "Public"
 type: "Post"
 category: ["Portfolio", "Digital", "Automation"]
-tags: ["infrastructure", "tailscale", "dokploy", "traefik", "minio", "waha", "self-hosted", "devops", "security"]
-summary: "A 5-machine Tailscale mesh running Dokploy, Traefik, MinIO, WAHA, and monitoring infrastructure. Includes a real security incident response to CVE-2025-66478 that validated the architecture's resilience."
+tags: ["infrastructure", "tailscale", "deployment-platform", "traefik", "minio", "whatsapp-api", "self-hosted", "devops", "security"]
+summary: "A 5-machine Tailscale mesh running a self-hosted deployment platform, Traefik, MinIO, a WhatsApp API gateway, and monitoring infrastructure. Includes a real security incident response to CVE-2025-66478 that validated the architecture's resilience."
 thumbnail: null
 ---
 
@@ -14,7 +14,7 @@ thumbnail: null
 
 **Project Type:** Infrastructure Engineering / DevOps
 **Scale:** 5-machine Tailscale mesh
-**Stack:** Dokploy, Traefik, MinIO, WAHA, Prometheus/Grafana, Cloudflare Tunnel
+**Stack:** Self-hosted deployment platform, Traefik, MinIO, WhatsApp HTTP API gateway, Prometheus/Grafana, Cloudflare Tunnel
 **Security Incident:** CVE-2025-66478 response
 
 ---
@@ -23,13 +23,13 @@ thumbnail: null
 
 Five machines connected via Tailscale mesh network, forming a private overlay network with zero public inbound ports. The machines span cloud providers (Oracle Cloud free tier, DigitalOcean) and architectures (ARM64, x86), unified under a single management plane.
 
-**Dokploy** handles container orchestration and deployment. It is the self-hosted alternative to platforms like Railway or Render, providing a deployment dashboard for Docker containers without the per-container pricing of managed PaaS. All client applications, internal tools, and automation infrastructure deploy through Dokploy.
+**Container Orchestration.** The deployment platform handles container orchestration and deployment. It is a self-hosted alternative to managed PaaS providers, providing a deployment dashboard for Docker containers without per-container pricing. All client applications, internal tools, and automation infrastructure deploy through this platform.
 
 **Traefik** serves as the reverse proxy and automatic SSL termination layer. Every service gets HTTPS automatically via Let's Encrypt, with routing rules defined in Docker labels rather than nginx configuration files. Cloudflare Tunnel sits in front of Traefik for public-facing services, meaning the actual server IP is never exposed.
 
 **MinIO** provides S3-compatible object storage, self-hosted. Used for newsletter image assets (CDN-proxied for public reads), backup storage, and application file storage. The decision to self-host object storage rather than use S3 directly was driven by cost (free tier) and data sovereignty (Malaysian client data stays on infrastructure I control).
 
-**WAHA** (WhatsApp HTTP API) is a self-hosted WhatsApp Business API gateway. It enables the WhatsApp automation workflows described in the automation practice, providing HTTP endpoints for sending and receiving WhatsApp messages without relying on third-party SaaS middleware.
+**WhatsApp API Gateway.** A self-hosted WhatsApp Business API gateway providing HTTP endpoints for sending and receiving WhatsApp messages without relying on third-party SaaS middleware. It enables the WhatsApp automation workflows described in the automation practice.
 
 **Monitoring** runs Prometheus for metrics collection and Grafana for dashboards. Uptime monitoring, container health, disk usage, and network metrics are tracked across all five machines.
 
@@ -39,7 +39,7 @@ Five machines connected via Tailscale mesh network, forming a private overlay ne
 
 The architecture was validated under real conditions when CVE-2025-66478 required an emergency response. The vulnerability affected a component in the stack and required rapid assessment, patching, and verification across all machines.
 
-The response demonstrated that the infrastructure was designed for exactly this scenario: Tailscale mesh meant patches could be applied remotely without exposing management interfaces. Dokploy's container-based deployment meant affected services could be redeployed with patched images without downtime to unaffected services. The monitoring stack provided immediate visibility into whether the vulnerability had been exploited before patching.
+The response demonstrated that the infrastructure was designed for exactly this scenario: Tailscale mesh meant patches could be applied remotely without exposing management interfaces. The deployment platform's container-based architecture meant affected services could be redeployed with patched images without downtime to unaffected services. The monitoring stack provided immediate visibility into whether the vulnerability had been exploited before patching.
 
 The incident was contained with no data loss, no service interruption, and no client impact. The post-mortem documented the response timeline and identified improvements to the patching workflow.
 

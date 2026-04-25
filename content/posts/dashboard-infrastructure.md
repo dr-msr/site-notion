@@ -26,7 +26,7 @@ The decision to self-host Supabase rather than use their managed offering was dr
 
 ## Deployment
 
-Deployments use Dokploy's container management, triggered by git push. The deployment process builds a new container image, performs a health check, and swaps traffic to the new container only after the health check passes. The old container remains available for rollback for 24 hours.
+Deployments use the deployment platform's container management, triggered by git push. The deployment process builds a new container image, performs a health check, and swaps traffic to the new container only after the health check passes. The old container remains available for rollback for 24 hours.
 
 Database migrations run as part of the deployment pipeline, with automatic backup before any schema change. Backups are stored on the MinIO instance (separate machine on the Tailscale mesh) with 30-day retention.
 
