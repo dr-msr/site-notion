@@ -4,7 +4,7 @@ slug: "mental-health-migration"
 date: "2025-03-01"
 status: "Public"
 type: "Post"
-category: ["Portfolio", "Digital"]
+category: ["Portfolio", "Digital", "Automation"]
 tags: ["infrastructure", "migration", "cloudflare", "cloudways", "cost-optimization"]
 summary: "Migrated a mental health social enterprise off overprovisioned legacy hosting, centralised their DNS on Cloudflare, and reduced monthly infrastructure costs by 85%."
 thumbnail: null
