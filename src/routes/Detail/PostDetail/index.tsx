@@ -1,15 +1,21 @@
-import React from "react"
+import React, { useMemo } from "react"
 import PostHeader from "./PostHeader"
 import Footer from "./PostFooter"
 import CommentBox from "./CommentBox"
 import Category from "src/components/Category"
 import MarkdownRenderer from "../components/MarkdownRenderer"
+import PortfolioInfoCard, { parsePortfolioMetadata } from "src/components/PortfolioInfoCard"
 import usePostQuery from "src/hooks/usePostQuery"
 
 type Props = {}
 
 const PostDetail: React.FC<Props> = () => {
   const data = usePostQuery()
+
+  const { fields, remainingContent } = useMemo(() => {
+    if (!data?.content) return { fields: [], remainingContent: data?.content || "" }
+    return parsePortfolioMetadata(data.content)
+  }, [data?.content])
 
   if (!data) return null
 
@@ -26,8 +32,9 @@ const PostDetail: React.FC<Props> = () => {
           </div>
         )}
         {data.type[0] === "Post" && <PostHeader data={data} />}
+        {fields.length > 0 && <PortfolioInfoCard fields={fields} />}
         <div>
-          <MarkdownRenderer content={data.content} />
+          <MarkdownRenderer content={remainingContent} />
         </div>
         {data.type[0] === "Post" && (
           <>
