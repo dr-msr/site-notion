@@ -84,22 +84,29 @@ const CategorySelect: React.FC<Props> = () => {
   ]
 
   const arrowClass =
-    "flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full text-gray-10 bg-gray-4 hover:bg-gray-6 hover:text-gray-12 transition-colors cursor-pointer"
+    "w-7 h-7 flex items-center justify-center rounded-full text-gray-10 bg-gray-4 hover:bg-gray-6 hover:text-gray-12 transition-colors cursor-pointer"
 
   return (
-    <div className="flex mt-2 mb-2 gap-1.5 items-center min-w-0 flex-1">
+    <div className="relative mt-2 mb-2 min-w-0">
+      {/* Left arrow overlay */}
       <button
         onClick={() => scroll("left")}
-        className={`${arrowClass} ${canScrollLeft ? "opacity-100" : "opacity-0 pointer-events-none"} transition-opacity`}
+        className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 ${arrowClass} ${canScrollLeft ? "opacity-100" : "opacity-0 pointer-events-none"} transition-opacity`}
         aria-label="Scroll categories left"
         tabIndex={canScrollLeft ? 0 : -1}
       >
         <ChevronLeft className="w-4 h-4" />
       </button>
 
+      {/* Left fade */}
+      {canScrollLeft && (
+        <div className="absolute left-7 top-0 bottom-0 w-4 z-[5] pointer-events-none bg-gradient-to-r from-gray-1 to-transparent dark:from-gray-1" />
+      )}
+
       <div
         ref={scrollRef}
-        className="flex gap-2 items-center overflow-x-auto flex-nowrap scrollbar-none flex-1 min-w-0"
+        className="flex gap-2 items-center overflow-x-auto flex-nowrap scrollbar-none w-full"
+        style={{ paddingLeft: canScrollLeft ? '2.25rem' : '0', paddingRight: canScrollRight ? '2.25rem' : '0', transition: 'padding 150ms ease' }}
       >
         {categories.map((category) => {
           const isActive = currentCategory === category.key
@@ -119,9 +126,15 @@ const CategorySelect: React.FC<Props> = () => {
         })}
       </div>
 
+      {/* Right fade */}
+      {canScrollRight && (
+        <div className="absolute right-7 top-0 bottom-0 w-4 z-[5] pointer-events-none bg-gradient-to-l from-gray-1 to-transparent dark:from-gray-1" />
+      )}
+
+      {/* Right arrow overlay */}
       <button
         onClick={() => scroll("right")}
-        className={`${arrowClass} ${canScrollRight ? "opacity-100" : "opacity-0 pointer-events-none"} transition-opacity`}
+        className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 ${arrowClass} ${canScrollRight ? "opacity-100" : "opacity-0 pointer-events-none"} transition-opacity`}
         aria-label="Scroll categories right"
         tabIndex={canScrollRight ? 0 : -1}
       >
