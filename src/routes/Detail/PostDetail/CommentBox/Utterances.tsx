@@ -35,8 +35,7 @@ const Utterances: React.FC<Props> = ({ issueTerm }) => {
   }, [scheme, router])
   return (
     <>
-      <div id="comments" className="md:-ml-16">
-        <div className="utterances-frame"></div>
+      <div id="comments" className="relative overflow-hidden md:-ml-16">
       </div>
     </>
   )
