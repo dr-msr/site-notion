@@ -16,7 +16,7 @@ const RequestFAB = () => {
       <Link
         href="/request"
         className="hidden md:flex fixed bottom-8 right-8 z-[40] items-center gap-2
-          bg-blue-9 hover:bg-blue-10 text-white
+          bg-gray-12 hover:bg-gray-11 text-gray-1
           px-5 py-3 rounded-full shadow-lg
           transition-all duration-300 ease-in-out
           hover:shadow-xl hover:scale-105
@@ -34,7 +34,7 @@ const RequestFAB = () => {
         <Link
           href="/request"
           className="flex items-center justify-center gap-2
-            bg-blue-9 hover:bg-blue-10 text-white
+            bg-gray-12 hover:bg-gray-11 text-gray-1
             w-full py-3 rounded-xl shadow-lg
             transition-all duration-200
             pointer-events-auto
