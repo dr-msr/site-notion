@@ -20,16 +20,18 @@ const MarkdownRenderer: FC<Props> = ({ content }) => {
         components={{
           img: ({ src, alt, ...props }) => {
             if (!src) return null
+            const isPortfolioImage = src.includes("/images/portfolio/")
+            const grayscaleClass = isPortfolioImage ? " grayscale" : ""
             if (src.startsWith("http")) {
               return (
                 <span className="block relative w-full my-4">
-                  <img src={src} alt={alt || ""} className="rounded-lg max-w-full" {...props} />
+                  <img src={src} alt={alt || ""} className={`rounded-lg max-w-full${grayscaleClass}`} {...props} />
                 </span>
               )
             }
             return (
               <span className="block relative w-full my-4 overflow-hidden rounded-lg">
-                <Image src={src} alt={alt || ""} width={800} height={450} className="rounded-lg" />
+                <Image src={src} alt={alt || ""} width={800} height={450} className={`rounded-lg${grayscaleClass}`} />
               </span>
             )
           },
