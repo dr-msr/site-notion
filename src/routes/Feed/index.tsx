@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import SearchInput from "./SearchInput"
 import { FeedHeader } from "./FeedHeader"
-import Footer from "./Footer"
+
 import MobileProfileCard from "./MobileProfileCard"
 import ProfileCard from "./ProfileCard"
 import ServiceCard from "./ServiceCard"
@@ -27,9 +27,6 @@ const Feed: React.FC<Props> = () => {
         <PinnedPosts q={q} />
         <FeedHeader />
         <PostList q={q} />
-        <div className="footer pb-8 lg:hidden">
-          <Footer />
-        </div>
       </div>
       <div
         className="rt hidden lg:block lg:col-span-3 overflow-y-auto overflow-x-hidden sticky scrollbar-none"
@@ -41,9 +38,6 @@ const Feed: React.FC<Props> = () => {
         </div>
         {/* <ServiceCard /> */}
         <ContactCard />
-        <div className="footer pt-4">
-          <Footer />
-        </div>
       </div>
     </div>
   )
