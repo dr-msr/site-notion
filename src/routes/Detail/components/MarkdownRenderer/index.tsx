@@ -6,6 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { FC } from "react"
 import ShareImageButton from "./ShareImageButton"
+import ImageGallery, { GalleryItem } from "./ImageGallery"
 
 // A markdown link to "#share-image:/path.png" renders as a share button for that image.
 const SHARE_IMAGE = "#share-image:"
@@ -56,11 +57,24 @@ const MarkdownRenderer: FC<Props> = ({ content }) => {
               </a>
             )
           },
-          pre: ({ children, ...props }) => (
-            <pre className="rounded-lg overflow-x-auto my-4" {...props}>
-              {children}
-            </pre>
-          ),
+          pre: ({ node, children, ...props }) => {
+            // A ```gallery fenced block holds a JSON list of images for ImageGallery.
+            const code: any = node?.children?.[0]
+            const cls = code?.properties?.className
+            if (Array.isArray(cls) && cls.includes("language-gallery")) {
+              const text = (code.children || []).map((c: any) => c.value || "").join("")
+              try {
+                return <ImageGallery items={JSON.parse(text) as GalleryItem[]} />
+              } catch {
+                return null
+              }
+            }
+            return (
+              <pre className="rounded-lg overflow-x-auto my-4" {...props}>
+                {children}
+              </pre>
+            )
+          },
           code: ({ className, children, ...props }: any) => {
             const match = /language-(\w+)/.exec(className || "")
             if (match) {

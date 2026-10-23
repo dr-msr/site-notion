@@ -1,4 +1,5 @@
 import { FC, MouseEvent, ReactNode, useEffect, useState } from "react"
+import { Share2 } from "lucide-react"
 
 type Props = {
   src: string
@@ -33,22 +34,28 @@ const ShareImageButton: FC<Props> = ({ src, children }) => {
   }
 
   return (
-    <a
-      href={src}
-      download={name}
-      onClick={onClick}
-      style={{
-        display: "inline-block",
-        padding: "0.6rem 1.2rem",
-        borderRadius: "9999px",
-        background: "var(--gray-12)",
-        color: "var(--gray-1)",
-        fontWeight: 600,
-        textDecoration: "none",
-      }}
-    >
-      {children}
-    </a>
+    <span style={{ display: "flex", justifyContent: "center", margin: "1rem 0" }}>
+      <a
+        href={src}
+        download={name}
+        onClick={onClick}
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "0.5rem",
+          padding: "0.75rem 1.5rem",
+          borderRadius: "9999px",
+          background: "#c8321e",
+          color: "#ffffff",
+          fontWeight: 700,
+          textDecoration: "none",
+          boxShadow: "0 2px 8px rgba(0,0,0,0.25)",
+        }}
+      >
+        {children}
+        <Share2 size={18} aria-hidden="true" />
+      </a>
+    </span>
   )
 }
 
