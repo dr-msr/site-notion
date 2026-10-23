@@ -5,6 +5,10 @@ import rehypeRaw from "rehype-raw"
 import Image from "next/image"
 import Link from "next/link"
 import { FC } from "react"
+import ShareImageButton from "./ShareImageButton"
+
+// A markdown link to "#share-image:/path.png" renders as a share button for that image.
+const SHARE_IMAGE = "#share-image:"
 
 type Props = {
   content: string
@@ -36,6 +40,13 @@ const MarkdownRenderer: FC<Props> = ({ content }) => {
             )
           },
           a: ({ href, children, ...props }) => {
+            if (href?.startsWith(SHARE_IMAGE)) {
+              return (
+                <ShareImageButton src={href.slice(SHARE_IMAGE.length)}>
+                  {children}
+                </ShareImageButton>
+              )
+            }
             if (href?.startsWith("/")) {
               return <Link href={href}>{children}</Link>
             }
