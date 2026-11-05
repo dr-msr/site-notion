@@ -6,7 +6,7 @@ status: "Public"
 type: "Post"
 category: ["Advisory"]
 tags: ["advisory", "security", "nacsa", "pdpa", "healthcare", "malaysia"]
-summary: "Pada 4 November 2026 Majlis Keselamatan Negara menaikkan tahap ancaman siber negara daripada Rendah kepada Sederhana. Ini yang perlu orang awam jangkakan, dan yang mesti dibuat minggu ini oleh sesiapa yang membangunkan atau mengendalikan sistem."
+summary: "Pada 4 November 2026 Majlis Keselamatan Negara menaikkan tahap ancaman siber negara daripada Rendah kepada Sederhana. Minggu yang sama, papan iklan Kluang digodam dan DigiCert mengesahkan pencerobohan. Ini yang perlu dibuat sekarang, dan yang mesti dibuat minggu ini oleh sesiapa yang membangunkan atau mengendalikan sistem."
 thumbnail: null
 ---
 
@@ -22,32 +22,54 @@ Organisasi yang mengendalikan sistem kritikal negara (Infrastruktur Maklumat Kri
 
 ::: tab Orang awam
 
-![Infografik amaran awam untuk orang awam: tahap ancaman siber negara kini Sederhana, apa maknanya dan enam langkah sekarang](https://drmsr.dev/images/advisory/cyber-threat-level-public-ms.png?v=1)
+![Infografik amaran awam untuk orang awam: tahap ancaman siber negara kini Sederhana, apa maknanya dan enam langkah sekarang](https://drmsr.dev/images/advisory/cyber-threat-level-public-ms.png?v=2)
 
 [Kongsi infografik orang awam](#share-image:/images/advisory/cyber-threat-level-public-ms.png)
 
 ## Apa maknanya untuk anda
 
-Tiada serangan terhadap orang awam Malaysia yang diumumkan. Tahap ancaman mengubah apa yang institusi buat, bukan rutin harian anda. Bank, hospital, utiliti, telco dan sistem kerajaan sedang mengetatkan pertahanan, dan sebahagiannya mungkin lebih perlahan atau tergendala seketika semasa itu.
+Ini bukan latihan, dan ia sudah sampai kepada orang biasa. Dalam minggu yang sama tahap ini dinaikkan:
 
-Yang patut anda jangkakan ialah **lebih banyak penipuan yang menunggang berita ini**. Setiap amaran seperti ini melahirkan gelombang mesej palsu: "Amaran MKN, sahkan akaun anda", "bank anda diserang, pindahkan wang anda", "pasang kemas kini keselamatan ini". Tiada satu pun datang daripada kerajaan atau bank anda. Badan rasmi tidak menghantar pautan untuk ditekan, aplikasi untuk dipasang, atau meminta kata laluan dan kod OTP anda.
+- **Kluang, 1 November.** Lapan skrin LED Majlis Perbandaran Kluang di sekitar bandar digodam untuk memaparkan video lucah. Kumpulan yang menggelar diri "Leakers" mengaku bertanggungjawab, mendakwa mahu mendedahkan keselamatan yang lemah, dan mendakwa serangan yang sama turut mengenai skrin di Mesir, Iraq, Brazil dan China. Polis telah membuka siasatan. ([laporan](https://penangtoday.my/news/10192/hacker-group-leakers-says-kluang-led-billboard-hack-aimed-to-expose-weak-security/))
+- **DigiCert.** Antara pihak berkuasa sijil keselamatan terbesar dunia ini mengesahkan sistem dalamannya yang menyimpan rekod pelanggan lama telah dicerobohi, mendedahkan butiran perhubungan perniagaan dan, bagi sebahagian akaun, dokumen pengenalan diri. DigiCert menyatakan pengeluaran sijil tidak terjejas. ([laporan](https://gbhackers.com/digicert-confirms-data-breach/))
+- **Permintaan kelulusan dalam aplikasi bank.** Di Threads, ramai melaporkan permintaan kelulusan muncul dalam aplikasi bank mereka untuk pembelian yang tidak pernah mereka buat. Ini laporan pengguna, belum disahkan sebagai insiden, tetapi beginilah rupa cubaan merampas akaun.
 
-Perdana Menteri tidak menasihatkan orang awam membuat persiapan kecemasan. Berjaga-jaga, bukan panik.
+```gallery
+[
+ {
+  "src": "https://drmsr.dev/images/advisory/cyber-threat-level-kluang.png?v=1",
+  "alt": "News headline: Kluang LED billboard hack",
+  "caption": "Penang Today, 1 November 2026: kumpulan yang mengaku melakukan godaman LED Kluang."
+ },
+ {
+  "src": "https://drmsr.dev/images/advisory/cyber-threat-level-digicert.png?v=1",
+  "alt": "News headline: DigiCert confirms data breach",
+  "caption": "GBHackers, 5 November 2026: DigiCert mengesahkan data pelanggan dibolosi."
+ },
+ {
+  "src": "https://drmsr.dev/images/advisory/cyber-threat-level-mae-report.png?v=1",
+  "alt": "A Threads user's screenshot of an unexpected banking approval request",
+  "caption": "Laporan pengguna di Threads, 4 November 2026: permintaan kelulusan untuk pembelian yang tidak pernah dibuat, sempat ditolak. Nama dan butiran akaun dikaburkan."
+ }
+]
+```
+
+Kerajaan menyebut tahap yang lebih tinggi ini sebagai langkah berjaga-jaga. Dibaca bersama minggu ini, ia amaran untuk bertindak sekarang. Badan rasmi dan bank tidak pernah menghantar pautan untuk ditekan, aplikasi untuk dipasang, atau meminta kata laluan dan kod OTP anda.
 
 ## Buat sekarang
 
-1. Hidupkan pengesahan dua langkah. WhatsApp (Tetapan, Akaun, Pengesahan dua langkah), e-mel, aplikasi bank, akaun Google atau Apple anda. Satu tetapan ini menghalang kebanyakan rampasan akaun.
-2. Anggap mesej yang mendesak sebagai mencurigakan, terutamanya yang menyebut amaran ini, bank anda, kerajaan, atau "kemas kini". Jangan tekan pautan itu. Buka aplikasi rasmi sendiri, atau hubungi nombor yang tercetak di kad anda.
-3. Kemas kini telefon dan komputer anda. Pasang kemas kini sistem dan aplikasi yang tertunggak hari ini. Kalau anda menerima fail ZIP melalui WhatsApp baru-baru ini, baca [amaran kami yang terdahulu](/advisory/whatsapp-malware-bm).
-4. Jangan sekali-kali pasang aplikasi daripada pautan, dan jangan beri kod OTP kepada sesiapa. Bukan kepada "bank", bukan "polis", bukan "sokongan teknikal".
-5. Buat sandaran (backup) perkara yang penting. Gambar keluarga, dokumen, fail perniagaan. Simpan satu salinan di tempat yang bukan peranti yang sama.
+1. Kalau aplikasi bank minta anda luluskan sesuatu yang anda tidak mulakan, tolak. Kemudian hubungi nombor yang tercetak di kad anda dan maklumkan bank. Jangan luluskan "untuk tengok apa jadi".
+2. Hidupkan pengesahan dua langkah. WhatsApp (Tetapan, Akaun, Pengesahan dua langkah), e-mel, aplikasi bank, akaun Google atau Apple anda. Satu tetapan ini menghalang kebanyakan rampasan akaun.
+3. Anggap mesej yang mendesak sebagai mencurigakan, terutamanya yang menyebut amaran ini, bank anda, kerajaan, atau "kemas kini". Jangan tekan pautan itu. Buka aplikasi rasmi sendiri.
+4. Kemas kini telefon dan komputer anda, dan jangan pasang aplikasi daripada pautan. Pasang kemas kini sistem dan aplikasi yang tertunggak hari ini. Kalau anda menerima fail ZIP melalui WhatsApp baru-baru ini, baca [amaran kami yang terdahulu](/advisory/whatsapp-malware-bm).
+5. Jangan beri kod OTP kepada sesiapa, dan buat sandaran perkara yang penting. Bukan kepada "bank", bukan "polis", bukan "sokongan teknikal". Simpan satu salinan gambar dan fail di tempat yang bukan peranti yang sama.
 6. Kalau anda ditipu, hubungi 997 serta-merta. Pusat Respons Scam Kebangsaan beroperasi 24 jam dan panggilan itu dikira sebagai laporan polis. Melapor dalam 24 jam memberi peluang terbaik untuk membekukan wang itu.
 
 :::
 
 ::: tab IT dan pembangun
 
-![Infografik amaran awam untuk IT dan pembangun: sebelas sektor NCII dan senarai semak lapan langkah](https://drmsr.dev/images/advisory/cyber-threat-level-it-ms.png?v=1)
+![Infografik amaran awam untuk IT dan pembangun: sebelas sektor NCII dan senarai semak lapan langkah](https://drmsr.dev/images/advisory/cyber-threat-level-it-ms.png?v=2)
 
 [Kongsi infografik IT](#share-image:/images/advisory/cyber-threat-level-it-ms.png)
 

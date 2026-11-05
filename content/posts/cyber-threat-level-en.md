@@ -6,7 +6,7 @@ status: "Public"
 type: "Post"
 category: ["Advisory"]
 tags: ["advisory", "security", "nacsa", "pdpa", "healthcare", "malaysia"]
-summary: "On 4 November 2026 the National Security Council raised Malaysia's cyber threat level from Low to Medium. Here is what the public should expect, and what anyone who builds or runs a system has to do this week."
+summary: "On 4 November 2026 the National Security Council raised Malaysia's cyber threat level from Low to Medium. The same week, Kluang billboards were hijacked and DigiCert confirmed a breach. Here is what to do now, and what anyone who builds or runs a system has to do this week."
 thumbnail: null
 ---
 
@@ -22,32 +22,54 @@ Organisations that run the country's critical systems (the National Critical Inf
 
 ::: tab Public
 
-![Public advisory infographic for the public: Malaysia's cyber threat level is now Medium, what it means and six things to do now](https://drmsr.dev/images/advisory/cyber-threat-level-public-en.png?v=1)
+![Public advisory infographic for the public: Malaysia's cyber threat level is now Medium, what it means and six things to do now](https://drmsr.dev/images/advisory/cyber-threat-level-public-en.png?v=2)
 
 [Share the public infographic](#share-image:/images/advisory/cyber-threat-level-public-en.png)
 
 ## What this means for you
 
-No attack on the Malaysian public has been announced. A threat level changes what institutions do, not what you do day to day. Banks, hospitals, utilities, telcos and government systems are tightening their defences, and some may be slower or briefly unavailable while they do.
+This is not a drill, and it is already touching ordinary people. In the same week the level was raised:
 
-What you should expect is **more scams riding on the news**. Every alert like this produces a wave of fake messages: "MKN warning, verify your account", "your bank is under attack, move your money", "install this security update". None of these come from the government or your bank. Official bodies do not send you links to click, apps to install, or requests for your password or one-time code.
+- **Kluang, 1 November.** Eight Kluang Municipal Council LED screens around the town were hijacked to show pornographic videos. A group calling itself "Leakers" claimed it, said it wanted to expose weak security, and claimed the same sweep hit screens in Egypt, Iraq, Brazil and China. Police have opened investigations. ([report](https://penangtoday.my/news/10192/hacker-group-leakers-says-kluang-led-billboard-hack-aimed-to-expose-weak-security/))
+- **DigiCert.** One of the world's largest certificate authorities confirmed that an internal system holding archived customer records was accessed without authorisation, exposing business contact details and, for some accounts, identity documents. DigiCert says certificate issuance was not affected. ([report](https://gbhackers.com/digicert-confirms-data-breach/))
+- **Banking app prompts.** On Threads, people are reporting approval requests appearing in their banking app for purchases they never made. These are user reports, not a confirmed incident, but they are exactly what an account takeover attempt looks like.
 
-The Prime Minister did not advise the public to make emergency preparations. Precaution is the word, not panic.
+```gallery
+[
+ {
+  "src": "https://drmsr.dev/images/advisory/cyber-threat-level-kluang.png?v=1",
+  "alt": "News headline: Kluang LED billboard hack",
+  "caption": "Penang Today, 1 November 2026: the group claiming the Kluang LED hijack."
+ },
+ {
+  "src": "https://drmsr.dev/images/advisory/cyber-threat-level-digicert.png?v=1",
+  "alt": "News headline: DigiCert confirms data breach",
+  "caption": "GBHackers, 5 November 2026: DigiCert confirms a breach of customer records."
+ },
+ {
+  "src": "https://drmsr.dev/images/advisory/cyber-threat-level-mae-report.png?v=1",
+  "alt": "A Threads user's screenshot of an unexpected banking approval request",
+  "caption": "A user report on Threads, 4 November 2026: an approval request for a purchase they never made, rejected in time. Name and account details blurred."
+ }
+]
+```
+
+The government calls the higher level a precaution. Read alongside this week, it is a warning to act now. Official bodies and banks never send you links to click, apps to install, or ask for your password or one-time code.
 
 ## What to do now
 
-1. Turn on two-step verification. WhatsApp (Settings, Account, Two-step verification), your email, your banking app, your Google or Apple account. This one setting stops most account takeovers.
-2. Treat urgent messages as suspicious, especially any that mention this alert, your bank, the government, or an "update". Do not tap the link. Open the official app yourself, or call the number printed on your card.
-3. Update your phone and your computer. Install pending system updates and app updates today. If you received a ZIP file through WhatsApp recently, read our [earlier advisory](/advisory/whatsapp-malware-en).
-4. Never install an app from a link, and never give anyone your one-time code (OTP). Not your "bank", not "the police", not "tech support".
-5. Back up what matters. Family photos, documents, your business files. Keep one copy somewhere that is not the same device.
+1. If your banking app asks you to approve something you did not start, reject it. Then call the number printed on your card and tell your bank. Do not approve "to see what happens".
+2. Turn on two-step verification. WhatsApp (Settings, Account, Two-step verification), your email, your banking app, your Google or Apple account. This one setting stops most account takeovers.
+3. Treat urgent messages as suspicious, especially any that mention this alert, your bank, the government, or an "update". Do not tap the link. Open the official app yourself.
+4. Update your phone and your computer, and never install an app from a link. Install pending system and app updates today. If you received a ZIP file through WhatsApp recently, read our [earlier advisory](/advisory/whatsapp-malware-en).
+5. Never give anyone your one-time code (OTP), and back up what matters. Not your "bank", not "the police", not "tech support". Keep one copy of your photos and files somewhere that is not the same device.
 6. If you are scammed, call 997 at once. The National Scam Response Centre runs 24 hours a day and the call counts as a police report. Reporting within 24 hours gives the best chance of freezing the money.
 
 :::
 
 ::: tab IT and developers
 
-![Public advisory infographic for IT and developers: the eleven NCII sectors and an eight-step checklist](https://drmsr.dev/images/advisory/cyber-threat-level-it-en.png?v=1)
+![Public advisory infographic for IT and developers: the eleven NCII sectors and an eight-step checklist](https://drmsr.dev/images/advisory/cyber-threat-level-it-en.png?v=2)
 
 [Share the IT infographic](#share-image:/images/advisory/cyber-threat-level-it-en.png)
 
