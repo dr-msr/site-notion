@@ -7,6 +7,7 @@ import Link from "next/link"
 import { FC } from "react"
 import ShareImageButton from "./ShareImageButton"
 import ImageGallery, { GalleryItem } from "./ImageGallery"
+import Tabs, { TabDef } from "./Tabs"
 
 // A markdown link to "#share-image:/path.png" renders as a share button for that image.
 const SHARE_IMAGE = "#share-image:"
@@ -15,10 +16,61 @@ type Props = {
   content: string
 }
 
-const MarkdownRenderer: FC<Props> = ({ content }) => {
+// A block of lines between "::: tab <label>" and ":::" is one tab; adjacent
+// tab blocks form one tab group. Everything else is ordinary markdown.
+type Segment =
+  | { kind: "md"; text: string }
+  | { kind: "tabs"; tabs: { id: string; label: string; text: string }[] }
 
-  return (
-    <div className="markdown-content">
+const slugify = (label: string) =>
+  label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+
+const splitTabs = (content: string): Segment[] => {
+  const out: Segment[] = []
+  let md: string[] = []
+  let group: { id: string; label: string; text: string }[] | null = null
+  let cur: { label: string; lines: string[] } | null = null
+  const flushMd = () => {
+    if (md.join("\n").trim()) out.push({ kind: "md", text: md.join("\n") })
+    md = []
+  }
+  const flushGroup = () => {
+    if (group && group.length) out.push({ kind: "tabs", tabs: group })
+    group = null
+  }
+  for (const line of content.split("\n")) {
+    const open = /^::: tab (.+)$/.exec(line)
+    if (open) {
+      if (!group) {
+        flushMd()
+        group = []
+      }
+      cur = { label: open[1].trim(), lines: [] }
+      continue
+    }
+    if (cur) {
+      if (line.trim() === ":::") {
+        group!.push({ id: slugify(cur.label), label: cur.label, text: cur.lines.join("\n") })
+        cur = null
+      } else {
+        cur.lines.push(line)
+      }
+      continue
+    }
+    if (group && line.trim() === "") continue
+    flushGroup()
+    md.push(line)
+  }
+  if (cur) group!.push({ id: slugify(cur.label), label: cur.label, text: cur.lines.join("\n") })
+  flushGroup()
+  flushMd()
+  return out
+}
+
+const MarkdownRenderer: FC<Props> = ({ content }) => {
+  const segments = splitTabs(content)
+
+  const render = (text: string) => (
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw]}
@@ -131,8 +183,24 @@ const MarkdownRenderer: FC<Props> = ({ content }) => {
           hr: () => <hr className="my-8 border-gray-6" />,
         }}
       >
-        {content}
+        {text}
       </ReactMarkdown>
+  )
+
+  return (
+    <div className="markdown-content">
+      {segments.map((seg, i) =>
+        seg.kind === "md" ? (
+          <div key={i}>{render(seg.text)}</div>
+        ) : (
+          <Tabs
+            key={i}
+            tabs={seg.tabs.map(
+              (t): TabDef => ({ id: t.id, label: t.label, render: () => render(t.text) })
+            )}
+          />
+        )
+      )}
       <style jsx global>{`
         .markdown-content {
           font-size: 1rem;
