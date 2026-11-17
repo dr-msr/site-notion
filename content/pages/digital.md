@@ -32,3 +32,9 @@ I help healthcare organizations pragmatically apply artificial intelligence and 
 ## Data Operations & Analytics
 
 I specialize in unlocking the value of complex clinical data. My services include designing robust ETL (Extract, Transform, Load) processes, managing secure data migrations, and creating powerful visualizations and dashboards. I transform raw, disparate data sources into clear, actionable insights that drive better clinical decision-making, operational efficiency, and strategic planning.
+
+---
+
+## Cybersecurity: Security Reviews
+
+Upon request, I review web applications and the services behind them, and their source code when the owner grants access, following the open PTES and OWASP methodologies. I work only with the owner's written agreement, I review live production systems read-only, and I read and sign every report myself before handing it over. When I find something serious, I tell the owner straight away. As a clinician I also look at what a weakness would mean for patient data and for the local rules that healthcare and public sector systems must meet.
